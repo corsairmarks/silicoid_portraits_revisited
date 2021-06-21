@@ -1,0 +1,190 @@
+trait_silicoid = {
+	cost = 0
+	randomized = no
+	initial = no
+	modification = no
+	allowed_archetypes = { SLCOIDSC }
+	modifier = {
+		pop_growth_speed = -0.30
+		army_health = 0.6
+		army_damage_mult = 0.6
+		species_leader_exp_gain = -0.35
+		# tile_resource_food_mult = 0.25
+		# planet_jobs_food_produces_mult = 0.25
+		planet_pops_food_upkeep_mult = -1.0
+		# planet_pops_consumer_goods_upkeep_mult = 1.5
+		planet_pops_minerals_upkeep_mult = 1.5
+	}
+	opposites = {
+		trait_lithoid trait_intelligent
+	}
+}
+
+trait_melting = {
+	cost = 1
+	allowed_archetypes = { SLCOIDSC }
+	opposites = { trait_cold_pulse }
+	modifier = {
+		pc_desert_habitability = 0.5
+		pc_arid_habitability = 0.5
+		pc_savannah_habitability = 0.5
+	}
+}
+
+trait_cold_pulse = {
+	cost = 1
+	allowed_archetypes = { SLCOIDSC }
+	opposites = { trait_melting }	
+	modifier = {
+		pc_tundra_habitability = 0.5
+		pc_arctic_habitability = 0.5
+		pc_alpine_habitability = 0.5
+	}
+}
+
+trait_sparkly = {
+	cost = 1
+	allowed_archetypes = { SLCOIDSC }
+	opposites = { trait_grotesque trait_decadent }
+	modifier = {
+		# pop_other_species_owner_happiness = 0.03
+		pop_cat_worker_happiness = 0.1
+		pop_cat_slave_happiness = 0.1
+	}
+}
+
+trait_grotesque = {
+	cost = -1
+	allowed_archetypes = { SLCOIDSC }
+	opposites = { trait_sparkly trait_decadent }
+	modifier = {
+		# pop_other_species_owner_happiness = -0.05
+		pop_cat_worker_happiness = -0.1
+		pop_cat_slave_happiness = -0.1
+	}
+}
+
+trait_sharp = {
+	cost = 1
+	allowed_archetypes = { SLCOIDSC }
+	modifier = {
+		army_damage_mult = 0.30
+	}
+}
+
+trait_eternal = {
+	cost = 2
+	allowed_archetypes = { SLCOIDSC }
+	opposites = { trait_degrading trait_venerable trait_enduring trait_fleeting trait_fleeting_lithoid }
+	modifier = {
+		leader_age = 200
+	}
+}
+
+trait_degrading = {
+	cost = -1
+	allowed_archetypes = { SLCOIDSC }
+	opposites = { trait_eternal trait_venerable trait_enduring trait_fleeting trait_fleeting_lithoid }
+	modifier = {
+		leader_age = -30
+	}
+}
+
+trait_brittle = {
+	cost = -2
+	allowed_archetypes = { SLCOIDSC }
+	opposites = { trait_solid_shape trait_resilient }
+	modifier = {
+		army_health = -0.4
+		army_damage_mult = -0.4
+	}
+}
+
+trait_solid_shape = {
+	cost = 2
+	allowed_archetypes = { SLCOIDSC }
+	opposites = { trait_brittle }
+	modifier = {
+		army_health = 0.4
+		army_damage_mult = 0.4
+	}
+}
+
+trait_axiomatic_synapses = {
+	cost = -1
+	allowed_archetypes = { SLCOIDSC }
+	opposites = { trait_fluid_synapses trait_intelligent trait_erudite trait_natural_physicists trait_natural_sociologists trait_natural_engineers }
+	modifier = {
+		planet_jobs_physics_research_produces_mult = -0.07
+		planet_jobs_society_research_produces_mult = -0.07
+		planet_jobs_engineering_research_produces_mult = -0.07
+	}
+}
+
+trait_fluid_synapses = {
+	cost = 2
+	allowed_archetypes = { SLCOIDSC }
+	opposites = { trait_axiomatic_synapses trait_natural_physicists trait_natural_sociologists trait_natural_engineers trait_nerve_stapled trait_syncretic_proles }
+	modifier = {
+		planet_jobs_physics_research_produces_mult = 0.07
+		planet_jobs_society_research_produces_mult = 0.07
+		planet_jobs_engineering_research_produces_mult = 0.07
+	}
+}
+
+trait_demanding_structure = {
+	cost = -1
+	allowed_archetypes = { SLCOIDSC }
+	opposites = { trait_idealized_structure }
+	modifier = {
+		# planet_pops_consumer_goods_upkeep_mult = 0.5
+		planet_pops_minerals_upkeep_mult = 0.5
+	}
+}
+
+trait_idealized_structure = {
+	cost = 2
+	allowed_archetypes = { SLCOIDSC }
+	opposites = { trait_demanding_structure }
+	modifier = {
+		# planet_pops_consumer_goods_upkeep_mult = -0.5
+		planet_pops_minerals_upkeep_mult = -0.5
+	}
+}
+
+trait_electroid = {
+	cost = -1
+	allowed_archetypes = { SLCOIDSC }
+	modifier = {
+		planet_pops_energy_upkeep_mult = 0.5
+		# planet_pops_consumer_goods_upkeep_mult = -1.5
+		planet_pops_minerals_upkeep_mult = -1.5
+	}
+}
+
+trait_rooted = {
+	cost = -1
+	allowed_archetypes = { SLCOIDSC }
+	opposites = { trait_roaming trait_nomadic trait_sedentary }
+	modifier = {
+		pop_growth_from_immigration = -0.5
+	}
+}
+
+trait_roaming = {
+	cost = 1
+	allowed_archetypes = { SLCOIDSC }
+	opposites = { trait_rooted trait_nomadic trait_sedentary }
+	modifier = {
+		pop_growth_from_immigration = 0.5
+	}
+}
+
+trait_compact = {
+	cost = 2
+	allowed_archetypes = { SLCOIDSC }
+	opposites = { trait_traditional trait_quarrelsome }
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.25
+	}
+}

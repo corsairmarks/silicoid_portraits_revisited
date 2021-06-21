@@ -1,0 +1,16 @@
+
+civic_living_world = {
+	potential = { species = { value = SLCOIDSC } }
+	modifier = {
+		country_unity_produces_mult = 0.15
+	}
+}
+
+civic_terraformers = {
+	potential = { species = { value = SLCOIDSC } }
+	modification = no
+	modifier = {
+		terraform_speed_mult = 0.1
+		terraforming_cost_mult = -0.1
+	}
+}

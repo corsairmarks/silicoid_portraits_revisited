@@ -1,0 +1,126 @@
+silicoid_empire1 = {
+	ship_prefix = "Xot-"
+	species = {
+		class = SLCOD
+		portrait = silicoid_02
+		name = "Taclariot"
+		plural = "Taclariota"
+		adjective = "Taclariotan"
+		name_list = ART1
+		trait = trait_silicoid
+		trait = trait_sharp
+		trait = trait_brittle
+		trait = trait_idealized_structure
+	}
+	name = "Taclariotan Influence"
+	adjective = "Taclariotan"
+	authority = auth_imperial
+	government = gov_illuminated_autocracy
+	advisor_voice_type = "l_xenophobe"
+	planet_name = "Taclaarat"
+	planet_class = pc_arid
+	system_name = "Batkyn"
+	initializer = ""
+	graphical_culture = silicoid_01
+	city_graphical_culture = silicoid_01
+	empire_flag = {
+		icon = {
+			category = "domination"
+			file = "domination_15.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "v.dds"
+		}
+		colors = {
+			"red_orange"
+			"yellow"
+			"null"
+			"null"
+		}
+	}
+	ruler = {
+		gender = male
+		name = "Zec-Ta"
+		portrait = silicoid_02
+		texture = 5
+		hair = 0
+		clothes = 0
+		leader_class = ruler
+	}
+	spawn_as_fallen = no
+	ignore_portrait_duplication = no
+	room = "personality_federation_builders_room"
+	spawn_enabled = yes
+	ethic = ethic_authoritarian
+	# Originally had Xenophobe instead of Fanatic Materialist, but Technocracy now requires Fanatic Materialist.
+	# Given that the government is Imperial, it seemed more appropriate to retain Authoritarian.
+	# ethic = ethic_xenophobe
+	ethic = ethic_fanatic_materialist
+	civics = {
+		"civic_terraformers"
+		"civic_technocracy"
+	}
+}
+
+silicoid_empire2 = {
+	ship_prefix = "MU"
+	species = {
+		class = SLCOD
+		portrait = silicoid_b_01
+		name = "Gogrod"
+		plural = "Gogrodes"
+		adjective = "Gogrodan"
+		name_list = FUN2
+		trait = trait_silicoid
+		trait = trait_grotesque
+		trait = trait_solid_shape
+		trait = trait_rooted
+		trait = trait_eternal
+	}
+	name = "Mandate of Druerd"
+	adjective = "Druerd"
+	authority = auth_dictatorial
+	government = gov_theocratic_dictatorship
+	planet_name = "Druerd"
+	planet_class = pc_arctic
+	system_name = "Dim One"
+	initializer = ""
+	graphical_culture = mammalian_01
+	city_graphical_culture = molluscoid_01
+	empire_flag = {
+		icon = {
+			category = "blocky"
+			file = "flag_blocky_8.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"indigo"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	ruler = {
+		gender = male
+		name = "Grabaam"
+		portrait = silicoid_b_01
+		texture = 1
+		hair = 0
+		clothes = 0
+		leader_class = ruler
+	}
+	spawn_as_fallen = no
+	ignore_portrait_duplication = no
+	room = "personality_xenophobic_isolationists_room"
+	spawn_enabled = yes
+	ethic = ethic_fanatic_authoritarian
+	ethic = ethic_spiritualist
+	civics = {
+		"civic_living_world"
+		"civic_functional_architecture"
+	}
+}

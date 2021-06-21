@@ -1,0 +1,28 @@
+# switch = {
+# 	trigger = free_district_slots
+# 	1 = { set_variable = { which = free_districts value = 1 } }
+# 	2 = { set_variable = { which = free_districts value = 2 } }
+# 	3 = { set_variable = { which = free_districts value = 3 } }
+# 	4 = { set_variable = { which = free_districts value = 4 } }
+# 	5 = { set_variable = { which = free_districts value = 5 } }
+# 	6 = { set_variable = { which = free_districts value = 6 } }
+# 	7 = { set_variable = { which = free_districts value = 7 } }
+# 	8 = { set_variable = { which = free_districts value = 8 } }
+# 	9 = { set_variable = { which = free_districts value = 9 } }
+# 	10 = { set_variable = { which = free_districts value = 10 } }
+# 	11 = { set_variable = { which = free_districts value = 11 } }
+# 	12 = { set_variable = { which = free_districts value = 12 } }
+# 	13 = { set_variable = { which = free_districts value = 13 } }
+# 	14 = { set_variable = { which = free_districts value = 14 } }
+# 	15 = { set_variable = { which = free_districts value = 15 } }
+# 	16 = { set_variable = { which = free_districts value = 16 } }
+# 	17 = { set_variable = { which = free_districts value = 17 } }
+# 	18 = { set_variable = { which = free_districts value = 18 } }
+# 	19 = { set_variable = { which = free_districts value = 19 } }
+# 	20 = { set_variable = { which = free_districts value = 20 } }
+# 	21 = { set_variable = { which = free_districts value = 21 } }
+# 	22 = { set_variable = { which = free_districts value = 22 } }
+# 	23 = { set_variable = { which = free_districts value = 23 } }
+# 	24 = { set_variable = { which = free_districts value = 24 } }
+# 	25 = { set_variable = { which = free_districts value = 25 } }
+# }
