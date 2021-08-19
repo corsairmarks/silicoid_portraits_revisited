@@ -39,20 +39,7 @@ planet_event = {
 		owner = { any_owned_pop_species = { has_trait = trait_silicoid } }
 	}
 	immediate = {
-		log = "begin silicoids.3 for [This.GetName]"
-		if  = {
-			limit = { owner = { has_origin = origin_shattered_ring } }
-			if = {
-				limit = { owner = { is_hive_empire = no } }
-				add_district = district_rw_commercial
-			}
-			else = {
-				add_district = district_rw_generator
-			}
-			add_deposit = d_segment_rubble_1_silicoid
-			add_deposit = d_segment_rubble_2_silicoid
-		}
-		else_if = {
+		if = {
 			limit = { is_planet_class = pc_hive }
 			while = {
 				limit = {
@@ -65,7 +52,16 @@ planet_event = {
 				remove_district = district_mining_uncapped
 			}
 		}
-		# TODO: do I need to do anythign for habitats?
+		else_if = {
+			limit = { owner = { has_origin = origin_void_dwellers } }
+			solar_system = {
+				random_system_planet = {
+					limit = { has_planet_flag = void_dweller_habitat_2 }
+					remove_building = building_commercial_zone
+					add_building = building_hydroponics_farm
+				}
+			}
+		}
 		else_if = {
 			limit = { habitable_planet = yes }
 			while = {
@@ -79,15 +75,17 @@ planet_event = {
 				remove_district = district_mining
 			}
 		}
-		if = {
-			limit = {
-				resource_stockpile_compare = {
-					resource = food
-					value = 0
+		owner = {
+			if = {
+				limit = {
+					resource_stockpile_compare = {
+						resource = food
+						value = 0
+					}
 				}
-			}
-			add_resource = {
-				food = 50
+				add_resource = {
+					food = 50
+				}
 			}
 		}
 	}
