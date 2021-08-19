@@ -79,6 +79,17 @@ planet_event = {
 				remove_district = district_mining
 			}
 		}
+		if = {
+			limit = {
+				resource_stockpile_compare = {
+					resource = food
+					value = 0
+				}
+			}
+			add_resource = {
+				food = 50
+			}
+		}
 	}
 }
 
