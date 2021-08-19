@@ -1,0 +1,6 @@
+@living_standard_food_high_silicoid = 0.5
+@living_standard_food_normal_silicoid = 0.25
+@living_standard_minerals_high_silicoid = 1.5
+@living_standard_minerals_normal_silicoid = 0.75
+@living_standard_energy_high_electroid = 1.5
+@living_standard_energy_normal_electroid = 0.75
