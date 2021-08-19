@@ -16,12 +16,13 @@ trait_silicoid = {
 		trait_nomadic
 		trait_sedentary
 	}
-	# TODO: tooltip
+	custom_tooltip = TRAIT_SILICOID_EFFECTS
+	# if these values change, be sure to alter the custom tooltip
 	modifier = {
 		pop_growth_speed = -0.1
 		pop_assembly_speed = -0.1
+		pop_environment_tolerance = 0.2
 		army_health = 0.25
-		species_leader_exp_gain = -0.25
 		leader_age = 10
 	}
 	ai_weight = {
