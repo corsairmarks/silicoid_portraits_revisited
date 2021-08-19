@@ -242,7 +242,6 @@ entity = {
 		locator = { name = "turret_muzzle_01" 		position = { 0  0 	0 	} }
 	}
 
-
 ###################################################################################
 ###																				###
 ###									COMBAT SHIPS								###
@@ -750,7 +749,7 @@ entity = {
 
 entity = {
 	name = "silicoid_01_mining_station_entity"
-	pdxmesh = "ai_01_station_small_mesh"
+	pdxmesh = "ai_01_station_small_frame_mesh"
 	
 	locator = { name = "part1" 			position = { 0 0 0 } }
 
@@ -772,6 +771,15 @@ entity = {
 	}
 	scale = @ai_station_small
 	cull_radius = 1.0
+}
+
+entity = {
+	name = "silicoid_01_mining_station_section_entity"
+	pdxmesh = "ai_01_station_small_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" }
+	state = { name = "death" animation = "death" looping = no }
 }
 
 entity = {
@@ -800,7 +808,7 @@ entity = {
 
 entity = {
 	name = "silicoid_01_research_station_entity"
-	pdxmesh = "ai_01_station_small_mesh"
+	pdxmesh = "ai_01_station_small_frame_mesh"
 		
 	locator = { name = "part1" 			position = { 0 0 0 } }
 		
@@ -822,6 +830,15 @@ entity = {
 	}
 	scale = @ai_station_small
 	cull_radius = 1.0
+}
+
+entity = {
+	name = "silicoid_01_research_station_section_entity"
+	pdxmesh = "ai_01_station_small_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" }
+	state = { name = "death" animation = "death" looping = no }
 }
 
 entity = {
@@ -1525,6 +1542,27 @@ entity = {
 	}
 	
 	state = { name = "death" state_time = 5 }
+}
+
+entity = {
+	name = "silicoid_01_battleship_bow_XL1_entity"
+	pdxmesh = "locator_mesh"
+	locator = { name = "xl_gun_01" position = { 0 0 0 } }
+
+	default_state = "idle"
+	state = { name = idle	state_time = 5
+		event = { time = 0 node = "light_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = moving	state_time = 5
+		event = { time = 0 node = "light_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "death" state_time = 5 }
+
+	# XL weapon windup locator names: xl_windup_1-10
 }
 
 #MID
