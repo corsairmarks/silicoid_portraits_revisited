@@ -1,153 +1,96 @@
 namespace = silicoids
-# Hidden setup event for silicoid species
+
+# intentionally empty in case the original on_game_start action fires
 event = {
 	id = silicoids.1 
 	hide_window = yes
 	is_triggered_only = yes
-	immediate = {
-		every_playable_country = {
-			country_event = { id = silicoids.2 }
-		}
-	}
+	immediate = { }
 }
 
+# triggered by empire_init_add_technologies
 country_event = {
 	id = silicoids.2
 	hide_window = yes
 	is_triggered_only = yes
+	trigger = {
+		has_valid_civic = civic_terraformers
+	}
 	immediate = {
-		# check special civic
-		if = {
-			limit = { has_valid_civic = civic_terraformers }
-			give_technology = { tech = tech_terrestrial_sculpting message = no }
+		give_technology = {
+			tech = tech_terrestrial_sculpting
+			message = no
 		}
-		# schedule silicoid adjustments several days in the future to allow ownership to settle
-		country_event = { id = silicoids.3 days = 2 }
 	}
 }
 
-country_event = {
+# triggered by empire_init_capital_planet
+# ROOT = planet, capital
+# FROM = species, founder
+planet_event = {
 	id = silicoids.3
 	hide_window = yes
 	is_triggered_only = yes
-	trigger = {
-		any_owned_pop_species = { has_trait = trait_silicoid }
+	pre_triggers = {
+		has_owner = yes
+		is_capital = yes
 	}
-	# TODO: split!
+	trigger = {
+		owner = { any_owned_pop_species = { has_trait = trait_silicoid } }
+	}
 	immediate = {
 		log = "begin silicoids.3 for [This.GetName]"
-		owner_species = {
-			log = "main design: [This.GetName]"
-			save_event_target_as = design_main_species
-		}
-		every_owned_species = {
-			limit = { species = { has_trait = trait_silicoid } }
-			log = "\"[This.GetName]\" owned by \"[Root.GetName]\" - attempting silicoid modification"
-			save_event_target_as = design_species
-			create_species = {
-				name = THIS
-				namelist = event_target:design_species
-				plural = THIS
-				adjective = THIS
-				class = THIS
-				portrait = THIS
-				traits = THIS
-				homeworld = THIS
-				pop_maintenance = 1.0 # 0.01
-				#new_pop_resource_requirement = { type = robot_food value = 30.0  }
-			}
-			log = "checking whether [This.GetName] is dominant"
+		if  = {
+			limit = { owner = { has_origin = origin_shattered_ring } }
 			if = {
-				limit = { is_exact_same_species = event_target:design_main_species }
-				log = "matched dominant species, so setting [design_species.GetName] as dominant"
-				ROOT = { change_dominant_species = { species = last_created_species change_all = yes } }
+				limit = { owner = { is_hive_empire = no } }
+				add_district = district_rw_commercial
 			}
 			else = {
-				# just replace the species
-				log = "replacing [This.GetName] with [design_species.GetName]"
-				ROOT = {
-					every_owned_pop = {
-						limit = { is_exact_same_species = event_target:design_species }
-						change_species = last_created_species
-					}
-					every_owned_leader = {
-						limit = { is_exact_same_species = event_target:design_species }
-						change_species = last_created_species
-					}
-					every_pool_leader = {
-						limit = { is_exact_same_species = event_target:design_species }
-						change_species = last_created_species
-					}
-					every_owned_army = {
-						limit = {
-							exists = species
-							is_exact_same_species = event_target:design_species
-						}
-						change_species = last_created_species
-					}
-					every_owned_ship = {
-						limit = {
-							is_ship_class = shipclass_colonizer
-							is_exact_same_species = event_target:design_species
-						}
-						change_species = last_created_species
+				add_district = district_rw_generator
+			}
+			add_deposit = d_segment_rubble_1_silicoid
+			add_deposit = d_segment_rubble_2_silicoid
+		}
+		else_if = {
+			limit = { is_planet_class = pc_hive }
+			while = {
+				limit = {
+					num_districts = {
+						type = district_farming_uncapped
+						value < 1
 					}
 				}
+				add_district = district_farming_uncapped
+				remove_district = district_mining_uncapped
 			}
 		}
-		if = {
-			limit = { any_owned_pop_species = { has_trait = trait_silicoid } }
-			capital_scope = {
-				log = "trying to modify districts on [This.GetName]"
-				if  = {
-					limit = { ROOT = { has_origin = origin_shattered_ring } }
-					log = "ringworld district changes on [This.GetName]"
-					if = {
-						limit = { ROOT = { is_hive_empire = no } }
-						add_district = district_rw_commercial
-					}
-					else = {
-						add_district = district_rw_generator
-					}
-					add_deposit = d_segment_rubble_1_silicoid
-					add_deposit = d_segment_rubble_1_silicoid
-					add_deposit = d_segment_rubble_2_silicoid
-					add_deposit = d_segment_rubble_2_silicoid
-				}
-				else_if = {
-					limit = {
-						OR = {
-							is_planet_class = pc_machine
-							is_planet_class = pc_hive
-							ROOT = { has_origin = origin_machine }
-						}
-					}
-					log = "machine/hive district changes on [This.GetName]"
-					while = {
-						limit = {
-							num_districts = {
-								type = district_farming_uncapped
-								value > 1
-							}
-						}
-						add_district = district_mining_uncapped
-						remove_district = district_farming_uncapped
+		# TODO: do I need to do anythign for habitats?
+		else_if = {
+			limit = { habitable_planet = yes }
+			while = {
+				limit = {
+					num_districts = {
+						type = district_farming
+						value < 1
 					}
 				}
-				else = {
-					log = "normal world district changes on [This.GetName]"
-					while = {
-						limit = {
-							num_districts = {
-								type = district_farming
-								value > 1
-							}
-						}
-						add_district = district_mining
-						remove_district = district_farming
-					}
-				}
+				add_district = district_farming
+				remove_district = district_mining
 			}
 		}
+	}
+}
+
+# flag mod as active
+event = {
+	id = silicoids.13
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_global_flag = silicoid_revisited_installed }
+	}
+	immediate = {
+		set_global_flag = silicoid_revisited_installed
 	}
 }
