@@ -1,4 +1,4 @@
-name="Animated Silicoid Portraits Revisited"
+name="Animated Silicoid Portraits: Revisited"
 dependencies={
 	"Animated Silicoid Portraits"
 	"Silfae's city sets updated"
@@ -10,4 +10,4 @@ tags={
 	"Species"
 }
 version="1.0.0"
-supported_version="2.8.1"
+supported_version="3.0.*"
