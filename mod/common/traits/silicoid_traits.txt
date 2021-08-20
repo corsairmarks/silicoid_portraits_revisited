@@ -32,6 +32,7 @@ trait_silicoid = {
 
 trait_melting = {
 	cost = 1
+	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
 		trait_lithoid
@@ -39,6 +40,15 @@ trait_melting = {
 		trait_pc_tundra_preference
 		trait_pc_arctic_preference
 		trait_pc_alpine_preference
+	}
+	species_potential_add = {
+		exists = THIS
+		is_scope_type = species
+		NOR = {
+			ideal_planet_class = pc_tundra
+			ideal_planet_class = pc_arctic
+			ideal_planet_class = pc_alpine
+		}
 	}
 	modifier = {
 		pc_desert_habitability = 0.5
@@ -52,6 +62,7 @@ trait_melting = {
 
 trait_cold_pulse = {
 	cost = 1
+	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
 		trait_lithoid
@@ -59,6 +70,15 @@ trait_cold_pulse = {
 		trait_pc_desert_preference
 		trait_pc_arid_preference
 		trait_pc_savannah_preference
+	}
+	species_potential_add = {
+		exists = THIS
+		is_scope_type = species
+		NOR = {
+			ideal_planet_class = pc_desert
+			ideal_planet_class = pc_arid
+			ideal_planet_class = pc_savannah
+		}
 	}
 	modifier = {
 		pc_tundra_habitability = 0.5
@@ -72,6 +92,7 @@ trait_cold_pulse = {
 
 trait_sparkly = {
 	cost = 1
+	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
 		trait_lithoid
@@ -85,6 +106,7 @@ trait_sparkly = {
 
 trait_grotesque = {
 	cost = -1
+	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
 		trait_lithoid
@@ -101,6 +123,7 @@ trait_grotesque = {
 
 trait_sharp = {
 	cost = 1
+	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = { trait_lithoid }
 	modifier = {
@@ -110,6 +133,7 @@ trait_sharp = {
 
 trait_eternal = {
 	cost = 2
+	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
 		trait_lithoid
@@ -122,13 +146,14 @@ trait_eternal = {
 
 trait_degrading = {
 	cost = -1
+	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
 		trait_lithoid
 		trait_eternal
 	}
 	modifier = {
-		leader_age = -25
+		leader_age = -15
 	}
 	ai_weight = {
 		weight = 0
@@ -137,6 +162,7 @@ trait_degrading = {
 
 trait_brittle = {
 	cost = -2
+	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
 		trait_lithoid
@@ -158,6 +184,7 @@ trait_brittle = {
 
 trait_solid_shape = {
 	cost = 2
+	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
 		trait_lithoid
@@ -174,6 +201,7 @@ trait_solid_shape = {
 
 trait_axiomatic_synapses = {
 	cost = -2
+	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
 		trait_lithoid
@@ -204,6 +232,7 @@ trait_axiomatic_synapses = {
 
 trait_fluid_synapses = {
 	cost = 2
+	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
 		trait_lithoid
@@ -232,7 +261,7 @@ trait_fluid_synapses = {
 
 trait_demanding_structure = {
 	cost = -1
-	modification = no
+	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
 		trait_lithoid
@@ -250,7 +279,7 @@ trait_demanding_structure = {
 
 trait_idealized_structure = {
 	cost = 2
-	modification = no
+	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
 		trait_lithoid
@@ -265,6 +294,7 @@ trait_idealized_structure = {
 
 trait_electroid = {
 	cost = -1
+	potential_crossbreeding_chance = 1.0
 	modification = no
 	allowed_archetypes = { LITHOID }
 	opposites = { trait_lithoid }
@@ -273,6 +303,7 @@ trait_electroid = {
 
 trait_rooted = {
 	cost = -1
+	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
 		trait_lithoid
@@ -288,6 +319,7 @@ trait_rooted = {
 
 trait_roaming = {
 	cost = 1
+	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
 		trait_lithoid
@@ -300,6 +332,7 @@ trait_roaming = {
 
 trait_compact = {
 	cost = 2
+	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
 		trait_lithoid
