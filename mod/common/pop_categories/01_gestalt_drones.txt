@@ -52,7 +52,7 @@ complex_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 			}
 			minerals = @living_standard_food_normal
 		}
@@ -60,7 +60,7 @@ complex_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 			}
 			minerals = @living_standard_minerals_normal_silicoid
@@ -70,7 +70,7 @@ complex_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 			}
 			energy = @living_standard_energy_normal_electroid
@@ -190,7 +190,7 @@ simple_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 			}
 			minerals = @living_standard_food_normal
 		}
@@ -198,7 +198,7 @@ simple_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 			}
 			minerals = @living_standard_minerals_normal_silicoid
@@ -208,7 +208,7 @@ simple_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 			}
 			energy = @living_standard_energy_normal_electroid

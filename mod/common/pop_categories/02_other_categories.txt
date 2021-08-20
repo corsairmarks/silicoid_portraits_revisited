@@ -174,7 +174,7 @@ slave = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 				has_very_high_living_standard_type = yes
 			}
 			minerals = @living_standard_food_normal
@@ -183,7 +183,7 @@ slave = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_very_high_living_standard_type = yes
 			}
@@ -194,7 +194,7 @@ slave = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_very_high_living_standard_type = yes
 			}
@@ -205,7 +205,7 @@ slave = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 				has_high_living_standard_type = yes
 			}
 			minerals = @living_standard_food_normal
@@ -214,7 +214,7 @@ slave = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_high_living_standard_type = yes
 			}
@@ -225,7 +225,7 @@ slave = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_high_living_standard_type = yes
 			}
@@ -236,7 +236,7 @@ slave = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 				OR = {
 					has_normal_living_standard_type = yes
 					has_academic_living_standard_type = yes
@@ -248,7 +248,7 @@ slave = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				OR = {
 					has_normal_living_standard_type = yes
@@ -262,7 +262,7 @@ slave = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 				OR = {
 					has_normal_living_standard_type = yes
@@ -276,7 +276,7 @@ slave = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 				OR = {
 					has_low_living_standard_type = yes
 					has_stratified_living_standard_type = yes
@@ -287,7 +287,7 @@ slave = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				OR = {
 					has_low_living_standard_type = yes
@@ -300,7 +300,7 @@ slave = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 				OR = {
 					has_low_living_standard_type = yes
@@ -410,14 +410,14 @@ bio_trophy = {
 		}
 
 		upkeep = {
-			trigger = { is_lithoid_species_class = yes }
+			trigger = { is_lithoid_species = yes }
 			minerals = @living_standard_food_normal
 			consumer_goods = @living_standard_luxuries_very_high
 		}
 
 		upkeep = {
 			trigger = {
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 			}
 			minerals = @living_standard_minerals_normal_silicoid
@@ -427,7 +427,7 @@ bio_trophy = {
 
 		upkeep = {
 			trigger = {
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 			}
 			energy = @living_standard_energy_normal_electroid
@@ -626,7 +626,7 @@ criminal = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 				has_shared_burden_living_standard_type = yes
 			}
 			minerals = @living_standard_food_normal
@@ -635,7 +635,7 @@ criminal = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_shared_burden_living_standard_type = yes
 			}
@@ -646,7 +646,7 @@ criminal = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_shared_burden_living_standard_type = yes
 			}
@@ -657,7 +657,7 @@ criminal = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 				has_very_high_living_standard_type = yes
 			}
 			minerals = @living_standard_food_normal
@@ -666,7 +666,7 @@ criminal = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_very_high_living_standard_type = yes
 			}
@@ -677,7 +677,7 @@ criminal = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_very_high_living_standard_type = yes
 			}
@@ -688,7 +688,7 @@ criminal = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 				has_high_living_standard_type = yes
 			}
 			minerals = @living_standard_food_normal
@@ -697,7 +697,7 @@ criminal = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_high_living_standard_type = yes
 			}
@@ -708,7 +708,7 @@ criminal = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_high_living_standard_type = yes
 			}
@@ -719,7 +719,7 @@ criminal = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 				OR = {
 					has_normal_living_standard_type = yes
 					has_academic_living_standard_type = yes
@@ -731,7 +731,7 @@ criminal = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				OR = {
 					has_normal_living_standard_type = yes
@@ -745,7 +745,7 @@ criminal = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 				OR = {
 					has_normal_living_standard_type = yes
@@ -759,7 +759,7 @@ criminal = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 				has_stratified_living_standard_type = yes
 			}
 			minerals = @living_standard_food_normal
@@ -768,7 +768,7 @@ criminal = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_stratified_living_standard_type = yes
 			}
@@ -779,7 +779,7 @@ criminal = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_stratified_living_standard_type = yes
 			}
@@ -790,7 +790,7 @@ criminal = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 				has_low_living_standard_type = yes
 			}
 			minerals = @living_standard_food_normal
@@ -799,7 +799,7 @@ criminal = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_low_living_standard_type = yes
 			}
@@ -810,7 +810,7 @@ criminal = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_low_living_standard_type = yes
 			}
@@ -1044,7 +1044,7 @@ deviant_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 				has_shared_burden_living_standard_type = yes
 			}
 			minerals = @living_standard_food_normal
@@ -1053,7 +1053,7 @@ deviant_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_shared_burden_living_standard_type = yes
 			}
@@ -1064,7 +1064,7 @@ deviant_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_shared_burden_living_standard_type = yes
 			}
@@ -1075,7 +1075,7 @@ deviant_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 				has_very_high_living_standard_type = yes
 			}
 			minerals = @living_standard_food_normal
@@ -1084,7 +1084,7 @@ deviant_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_very_high_living_standard_type = yes
 			}
@@ -1095,7 +1095,7 @@ deviant_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_very_high_living_standard_type = yes
 			}
@@ -1106,7 +1106,7 @@ deviant_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 				has_high_living_standard_type = yes
 			}
 			minerals = @living_standard_food_normal
@@ -1115,7 +1115,7 @@ deviant_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_high_living_standard_type = yes
 			}
@@ -1126,7 +1126,7 @@ deviant_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_high_living_standard_type = yes
 			}
@@ -1137,7 +1137,7 @@ deviant_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 				OR = {
 					has_normal_living_standard_type = yes
 					has_academic_living_standard_type = yes
@@ -1149,7 +1149,7 @@ deviant_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				OR = {
 					has_normal_living_standard_type = yes
@@ -1163,7 +1163,7 @@ deviant_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 				OR = {
 					has_normal_living_standard_type = yes
@@ -1177,7 +1177,7 @@ deviant_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 				has_stratified_living_standard_type = yes
 			}
 			minerals = @living_standard_food_normal
@@ -1186,7 +1186,7 @@ deviant_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_stratified_living_standard_type = yes
 			}
@@ -1197,7 +1197,7 @@ deviant_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_stratified_living_standard_type = yes
 			}
@@ -1208,7 +1208,7 @@ deviant_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 				has_low_living_standard_type = yes
 			}
 			minerals = @living_standard_food_normal
@@ -1217,7 +1217,7 @@ deviant_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_low_living_standard_type = yes
 			}
@@ -1228,7 +1228,7 @@ deviant_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_low_living_standard_type = yes
 			}
@@ -1433,7 +1433,7 @@ corrupt_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 				has_shared_burden_living_standard_type = yes
 			}
 			minerals = @living_standard_food_normal
@@ -1442,7 +1442,7 @@ corrupt_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_shared_burden_living_standard_type = yes
 			}
@@ -1453,7 +1453,7 @@ corrupt_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_shared_burden_living_standard_type = yes
 			}
@@ -1464,7 +1464,7 @@ corrupt_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 				has_very_high_living_standard_type = yes
 			}
 			minerals = @living_standard_food_normal
@@ -1473,7 +1473,7 @@ corrupt_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_very_high_living_standard_type = yes
 			}
@@ -1484,7 +1484,7 @@ corrupt_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_very_high_living_standard_type = yes
 			}
@@ -1495,7 +1495,7 @@ corrupt_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 				has_high_living_standard_type = yes
 			}
 			minerals = @living_standard_food_normal
@@ -1504,7 +1504,7 @@ corrupt_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_high_living_standard_type = yes
 			}
@@ -1515,7 +1515,7 @@ corrupt_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_high_living_standard_type = yes
 			}
@@ -1526,7 +1526,7 @@ corrupt_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 				OR = {
 					has_normal_living_standard_type = yes
 					has_academic_living_standard_type = yes
@@ -1538,7 +1538,7 @@ corrupt_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				OR = {
 					has_normal_living_standard_type = yes
@@ -1552,7 +1552,7 @@ corrupt_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 				OR = {
 					has_normal_living_standard_type = yes
@@ -1566,7 +1566,7 @@ corrupt_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 				has_stratified_living_standard_type = yes
 			}
 			minerals = @living_standard_food_normal
@@ -1575,7 +1575,7 @@ corrupt_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_stratified_living_standard_type = yes
 			}
@@ -1586,7 +1586,7 @@ corrupt_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_stratified_living_standard_type = yes
 			}
@@ -1597,7 +1597,7 @@ corrupt_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 				has_low_living_standard_type = yes
 			}
 			minerals = @living_standard_food_normal
@@ -1606,7 +1606,7 @@ corrupt_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_low_living_standard_type = yes
 			}
@@ -1617,7 +1617,7 @@ corrupt_drone = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_low_living_standard_type = yes
 			}
@@ -1770,7 +1770,7 @@ precursor = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 				exists = owner
 				owner = {
 					is_spiritualist = no
@@ -1782,7 +1782,7 @@ precursor = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				exists = owner
 				owner = {
@@ -1796,7 +1796,7 @@ precursor = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 				exists = owner
 				owner = {
@@ -1811,7 +1811,7 @@ precursor = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 				exists = owner
 				owner = {
 					is_spiritualist = yes
@@ -1823,7 +1823,7 @@ precursor = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				exists = owner
 				owner = {
@@ -1837,7 +1837,7 @@ precursor = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 				exists = owner
 				owner = {
@@ -1892,7 +1892,7 @@ xeno_ward = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_lithoid_species_class = yes
+				is_lithoid_species = yes
 			}
 			minerals = @living_standard_food_normal
 			consumer_goods = @living_standard_luxuries_very_high
@@ -1900,7 +1900,7 @@ xeno_ward = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 			}
 			minerals = @living_standard_minerals_normal_silicoid
@@ -1910,7 +1910,7 @@ xeno_ward = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
-				is_silicoid_species_class = yes
+				is_silicoid_species = yes
 				has_trait = trait_electroid
 			}
 			energy = @living_standard_energy_normal_electroid

@@ -1,21 +1,21 @@
-# Is the scope's species both the LITHOID archetype and the LITHOID species class?
+# Is the scope's species the LITHOID archetype with trait_lithoid?
 # Use when you need to distinguish Lithoids from Silicoids, otherwise use is_lithoid
-# the includes all classes of LITHOIDs.
+# the includes all classes of archetype LITHOIDs.
 # scope = anything with species (country/species/pop)
-is_lithoid_species_class = {
+is_lithoid_species = {
 	species = {
 		is_archetype = LITHOID
-		is_species_class = LITHOID
+		has_trait = trait_lithoid
 	}
 }
 
-# Is the scope's species both the LITHOID archetype and the SLCOD species class?
+# Is the scope's species the LITHOID archetype with trait_silicoid?
 # Use when you need to distinguish Silicoids from Lithoids, otherwise use is_lithoid
-# the includes all classes of LITHOIDs.
+# the includes all classes of archetype LITHOIDs.
 # scope = anything with species (country/species/pop)
-is_silicoid_species_class = {
+is_silicoid_species = {
 	species = {
 		is_archetype = LITHOID
-		is_species_class = SLCOD
+		has_trait = trait_silicoid
 	}
 }
