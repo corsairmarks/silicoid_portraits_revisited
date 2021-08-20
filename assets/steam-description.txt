@@ -2,7 +2,7 @@
 
 Do you dream of glassy silicoids?  Or perhaps you'd like some rock-people with sexual dimorphism?  Silfae's "Animated Silicoid Portraits" mod delivers several different options for portraits and extra gameplay features.  Do you wish the gameplay elements were up-to-date so that you can play the Taclariotan Influence or Mandate of Druerd as designed?  Then this mod is for you!
 
-There are lots of other mods which contain these portraits, so why should you choose this one?  None of the others update the custom solar system initializer, building, or species traits, but this one does!  Please enjoy my translation of Silfae's custom empire into modern Stellaris.
+There are lots of other mods which contain these portraits, so why should you choose this one?  None of the others update the species traits, custom empires, or shipset, but this one does!  Please enjoy my translation of Silfae's custom empire into modern Stellaris.
 
 [h1]Changes[/h1]
 
