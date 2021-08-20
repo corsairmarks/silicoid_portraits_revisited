@@ -14,3 +14,27 @@ SLCOD = {
 		name_list = FUN2
 	}
 }
+
+SLCODALT = {
+	silicoid_00 = {
+		name = "Silicoid"
+		plural = "Silicoids"
+		home_planet = "Karat"
+		home_system = "Batkyn"
+		name_list = SLCOD1
+	}
+	silicoid_01 = {
+		name = "Taclariot"
+		plural = "Taclariota"
+		home_planet = "Taclaarat"
+		home_system = "Batkyn"
+		name_list = SLCOD1
+	}
+	silicoid_02 = {
+		name = "Gogrod"
+		plural = "Gogrodes"
+		home_planet = "Druerd"
+		home_system = "Dim One"
+		name_list = FUN2
+	}
+}

@@ -15,3 +15,21 @@ SLCOD = {
 	move_pop_sound_effect = "moving_pop_confirmation"
 	trait = trait_silicoid
 }
+
+SLCODALT = {
+	archetype = LITHOID
+	playable = { has_lithoids = yes }
+	possible = { authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
+	randomized = { always = no }
+	gender = yes
+	portraits = {
+		"silicoid_01"
+		"silicoid_b_01"
+		"silicoid_02"
+		"silicoid_03"
+		"silicoid_04"
+	}
+	graphical_culture = silicoid_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+	trait = trait_lithoid
+}
