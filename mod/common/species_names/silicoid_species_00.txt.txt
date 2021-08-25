@@ -1,4 +1,11 @@
 SLCOD = {
+	silicoid_00 = {
+		name = "Silicoid"
+		plural = "Silicoids"
+		home_planet = "Karat"
+		home_system = "Batkyn"
+		name_list = SLCOD1
+	}
 	silicoid_01 = {
 		name = "Taclariot"
 		plural = "Taclariota"
