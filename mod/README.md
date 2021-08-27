@@ -73,6 +73,7 @@ This mod overwrites the corresponding species class added by "Silfae's city sets
 * 1.0.0 Initial version
 * 1.0.1 Resolve major bug where the `SLCODALT` species class did not get the proper Pop upkeep
 * 1.0.2 Prescripted empires require lithoids, allow portrait randomization
+* 1.0.3 Fix incomplete fleet name
 
 ## Source Code
 
