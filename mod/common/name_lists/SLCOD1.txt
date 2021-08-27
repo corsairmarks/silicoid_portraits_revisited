@@ -54,7 +54,7 @@ SLCOD1 = {
 
 	fleet_names = {
 		random_names = {
-			"4850P/" "8037I/Eleriak" "2784I/Delak" "1I/'Oumuamua" "2I/Borisov" "67P/Churyumov–Gerasimenko"
+			"4850P/Keldvar" "8037I/Eleriak" "2784I/Delak" "1I/'Oumuamua" "2I/Borisov" "67P/Churyumov–Gerasimenko"
 		}
 		sequential_name = "%O% Comets"
 	}
@@ -138,7 +138,6 @@ SLCOD1 = {
 	}
 
 	planet_names = {
-
 		generic = {
 			names = {
 				"Raging Hill" "Unresting Peaks" "Fabled Bluff" "Anwall Hillside" "Arlin Tips" "Haverming Peaks"
