@@ -37,7 +37,7 @@ All gameplay features from the original mod are upgraded to be fully compatible 
 
 ## Compatibility
 
-This mod has more compatibility concerns than most of my other Silfae's Revisited series.  Because to overwrites `pop_categories` (Pop strata) to adjust silicoid Pop resource upkeep, that makes this mod incompatible with any mods that also adjust Pop strata.  It's also likely to break any time Stellaris makes changes to the underlying Pop strata, such as the anticipated changes for the upcoming 3.1 'Lem' minor release.  These files are completely overwritten: 
+This mod has more compatibility concerns than most of my other Silfae's Revisited series.  Because to overwrites `pop_categories` (Pop strata) to adjust silicoid Pop resource upkeep, that makes this mod incompatible with any mods that also adjust Pop strata.  It is explicitly incompatible with [Animated Holosphere Rising Portraits: Revisited](https://steamcommunity.com/sharedfiles/filedetails/?id=XXX).  It's also likely to break any time Stellaris makes changes to the underlying Pop strata, such as the anticipated changes for the upcoming 3.1 'Lem' minor release.  These files are completely overwritten:
 
 * `common/pop_categories/00_social_classes.txt` - regular empire pop strata
 * `common/pop_categories/01_gestalt_drones.txt` - gestalt empire pop strata
