@@ -173,7 +173,6 @@ slave = {
 		# Lithoid Upkeep
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_very_high_living_standard_type = yes
 			}
@@ -182,7 +181,6 @@ slave = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_very_high_living_standard_type = yes
@@ -193,7 +191,6 @@ slave = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_very_high_living_standard_type = yes
@@ -204,7 +201,6 @@ slave = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_high_living_standard_type = yes
 			}
@@ -213,7 +209,6 @@ slave = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_high_living_standard_type = yes
@@ -224,7 +219,6 @@ slave = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_high_living_standard_type = yes
@@ -235,7 +229,6 @@ slave = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				OR = {
 					has_normal_living_standard_type = yes
@@ -247,7 +240,6 @@ slave = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				OR = {
@@ -261,7 +253,6 @@ slave = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				OR = {
@@ -275,7 +266,6 @@ slave = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				OR = {
 					has_low_living_standard_type = yes
@@ -286,7 +276,6 @@ slave = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				OR = {
@@ -299,7 +288,6 @@ slave = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				OR = {
@@ -404,7 +392,10 @@ bio_trophy = {
 	resources = {
 		category = pop_category_bio_trophy
 		upkeep = {
-			trigger = { is_lithoid = no }
+			trigger = {
+				is_organic_species = yes
+				is_lithoid = no
+			}
 			food = @living_standard_food_normal
 			consumer_goods = @living_standard_luxuries_very_high
 		}
@@ -625,7 +616,6 @@ criminal = {
 		# Lithoid Upkeep
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_shared_burden_living_standard_type = yes
 			}
@@ -634,7 +624,6 @@ criminal = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_shared_burden_living_standard_type = yes
@@ -645,7 +634,6 @@ criminal = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_shared_burden_living_standard_type = yes
@@ -656,7 +644,6 @@ criminal = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_very_high_living_standard_type = yes
 			}
@@ -665,7 +652,6 @@ criminal = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_very_high_living_standard_type = yes
@@ -676,7 +662,6 @@ criminal = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_very_high_living_standard_type = yes
@@ -687,7 +672,6 @@ criminal = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_high_living_standard_type = yes
 			}
@@ -696,7 +680,6 @@ criminal = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_high_living_standard_type = yes
@@ -707,7 +690,6 @@ criminal = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_high_living_standard_type = yes
@@ -718,7 +700,6 @@ criminal = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				OR = {
 					has_normal_living_standard_type = yes
@@ -730,7 +711,6 @@ criminal = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				OR = {
@@ -744,7 +724,6 @@ criminal = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				OR = {
@@ -758,7 +737,6 @@ criminal = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_stratified_living_standard_type = yes
 			}
@@ -767,7 +745,6 @@ criminal = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_stratified_living_standard_type = yes
@@ -778,7 +755,6 @@ criminal = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_stratified_living_standard_type = yes
@@ -789,7 +765,6 @@ criminal = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_low_living_standard_type = yes
 			}
@@ -798,7 +773,6 @@ criminal = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_low_living_standard_type = yes
@@ -809,7 +783,6 @@ criminal = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_low_living_standard_type = yes
@@ -1043,7 +1016,6 @@ deviant_drone = {
 		# Lithoid Upkeep
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_shared_burden_living_standard_type = yes
 			}
@@ -1052,7 +1024,6 @@ deviant_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_shared_burden_living_standard_type = yes
@@ -1063,7 +1034,6 @@ deviant_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_shared_burden_living_standard_type = yes
@@ -1074,7 +1044,6 @@ deviant_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_very_high_living_standard_type = yes
 			}
@@ -1083,7 +1052,6 @@ deviant_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_very_high_living_standard_type = yes
@@ -1094,7 +1062,6 @@ deviant_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_very_high_living_standard_type = yes
@@ -1105,7 +1072,6 @@ deviant_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_high_living_standard_type = yes
 			}
@@ -1114,7 +1080,6 @@ deviant_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_high_living_standard_type = yes
@@ -1125,7 +1090,6 @@ deviant_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_high_living_standard_type = yes
@@ -1136,7 +1100,6 @@ deviant_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				OR = {
 					has_normal_living_standard_type = yes
@@ -1148,7 +1111,6 @@ deviant_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				OR = {
@@ -1162,7 +1124,6 @@ deviant_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				OR = {
@@ -1176,7 +1137,6 @@ deviant_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_stratified_living_standard_type = yes
 			}
@@ -1185,7 +1145,6 @@ deviant_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_stratified_living_standard_type = yes
@@ -1196,7 +1155,6 @@ deviant_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_stratified_living_standard_type = yes
@@ -1207,7 +1165,6 @@ deviant_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_low_living_standard_type = yes
 			}
@@ -1216,7 +1173,6 @@ deviant_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_low_living_standard_type = yes
@@ -1227,7 +1183,6 @@ deviant_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_low_living_standard_type = yes
@@ -1432,7 +1387,6 @@ corrupt_drone = {
 		# Lithoid Upkeep
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_shared_burden_living_standard_type = yes
 			}
@@ -1441,7 +1395,6 @@ corrupt_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_shared_burden_living_standard_type = yes
@@ -1452,7 +1405,6 @@ corrupt_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_shared_burden_living_standard_type = yes
@@ -1463,7 +1415,6 @@ corrupt_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_very_high_living_standard_type = yes
 			}
@@ -1472,7 +1423,6 @@ corrupt_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_very_high_living_standard_type = yes
@@ -1483,7 +1433,6 @@ corrupt_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_very_high_living_standard_type = yes
@@ -1494,7 +1443,6 @@ corrupt_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_high_living_standard_type = yes
 			}
@@ -1503,7 +1451,6 @@ corrupt_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_high_living_standard_type = yes
@@ -1514,7 +1461,6 @@ corrupt_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_high_living_standard_type = yes
@@ -1525,7 +1471,6 @@ corrupt_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				OR = {
 					has_normal_living_standard_type = yes
@@ -1537,7 +1482,6 @@ corrupt_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				OR = {
@@ -1551,7 +1495,6 @@ corrupt_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				OR = {
@@ -1565,7 +1508,6 @@ corrupt_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_stratified_living_standard_type = yes
 			}
@@ -1574,7 +1516,6 @@ corrupt_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_stratified_living_standard_type = yes
@@ -1585,7 +1526,6 @@ corrupt_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_stratified_living_standard_type = yes
@@ -1596,7 +1536,6 @@ corrupt_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_low_living_standard_type = yes
 			}
@@ -1605,7 +1544,6 @@ corrupt_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_low_living_standard_type = yes
@@ -1616,7 +1554,6 @@ corrupt_drone = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_low_living_standard_type = yes
@@ -1769,7 +1706,6 @@ precursor = {
 		# Lithoid Upkeep
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				exists = owner
 				owner = {
@@ -1781,7 +1717,6 @@ precursor = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				exists = owner
@@ -1795,7 +1730,6 @@ precursor = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				exists = owner
@@ -1810,7 +1744,6 @@ precursor = {
 
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				exists = owner
 				owner = {
@@ -1822,7 +1755,6 @@ precursor = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				exists = owner
@@ -1836,7 +1768,6 @@ precursor = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				exists = owner
@@ -1890,16 +1821,12 @@ xeno_ward = {
 
 		# Lithoid Upkeep
 		upkeep = {
-			trigger = {
-				is_organic_species = yes
-				is_lithoid_species = yes
-			}
+			trigger = { is_lithoid_species = yes }
 			minerals = @living_standard_food_normal
 			consumer_goods = @living_standard_luxuries_very_high
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 			}
@@ -1909,7 +1836,6 @@ xeno_ward = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 			}
@@ -1920,9 +1846,7 @@ xeno_ward = {
 
 		# Robotic Upkeep
 		upkeep = {
-			trigger = {
-				is_robotic_species = yes
-			}
+			trigger = { is_robotic_species = yes }
 			energy = @living_standard_energy_normal
 		}
 	}
@@ -1959,6 +1883,5 @@ pre_sapients = {
 		# Organic Upkeep
 		upkeep = {
 		}
-
 	}
 }

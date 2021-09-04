@@ -148,7 +148,6 @@ ruler = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_shared_burden_living_standard_type = yes
 				owner = { is_primitive = no }
@@ -158,7 +157,6 @@ ruler = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_shared_burden_living_standard_type = yes
@@ -170,7 +168,6 @@ ruler = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_shared_burden_living_standard_type = yes
@@ -198,7 +195,6 @@ ruler = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				owner = { is_primitive = no }
 				OR = {
@@ -214,7 +210,6 @@ ruler = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				owner = { is_primitive = no }
@@ -232,7 +227,6 @@ ruler = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				owner = { is_primitive = no }
@@ -260,7 +254,6 @@ ruler = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_low_living_standard_type = yes
 				owner = { is_primitive = no }
@@ -270,7 +263,6 @@ ruler = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_low_living_standard_type = yes
@@ -282,7 +274,6 @@ ruler = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_low_living_standard_type = yes
@@ -296,6 +287,7 @@ ruler = {
 		# Primitives
 		upkeep = {
 			trigger = {
+				is_organic_species = yes
 				is_lithoid = no
 				owner = { is_primitive = yes }
 			}
@@ -543,7 +535,6 @@ specialist = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_shared_burden_living_standard_type = yes
 				owner = { is_primitive = no }
@@ -553,7 +544,6 @@ specialist = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_shared_burden_living_standard_type = yes
@@ -565,7 +555,6 @@ specialist = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_shared_burden_living_standard_type = yes
@@ -591,7 +580,6 @@ specialist = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				owner = { is_primitive = no }
 				OR = {
@@ -604,7 +592,6 @@ specialist = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				owner = { is_primitive = no }
@@ -619,7 +606,6 @@ specialist = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				owner = { is_primitive = no }
@@ -648,7 +634,6 @@ specialist = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				owner = { is_primitive = no }
 				OR = {
@@ -662,7 +647,6 @@ specialist = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				owner = { is_primitive = no }
@@ -678,7 +662,6 @@ specialist = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				owner = { is_primitive = no }
@@ -704,7 +687,6 @@ specialist = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_low_living_standard_type = yes
 				owner = { is_primitive = no }
@@ -714,7 +696,6 @@ specialist = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_low_living_standard_type = yes
@@ -726,7 +707,6 @@ specialist = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_low_living_standard_type = yes
@@ -739,6 +719,7 @@ specialist = {
 		# Primitives
 		upkeep = {
 			trigger = {
+				is_organic_species = yes
 				is_lithoid = no
 				owner = { is_primitive = yes }
 			}
@@ -754,6 +735,7 @@ specialist = {
 		upkeep = {
 			trigger = {
 				is_silicoid_species = yes
+				NOT = { has_trait = trait_electroid }
 				owner = { is_primitive = yes }
 			}
 			minerals = @living_standard_minerals_normal_silicoid
@@ -762,6 +744,7 @@ specialist = {
 		upkeep = {
 			trigger = {
 				is_silicoid_species = yes
+				has_trait = trait_electroid
 				owner = { is_primitive = yes }
 			}
 			energy = @living_standard_energy_normal_electroid
@@ -1018,7 +1001,6 @@ worker = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_shared_burden_living_standard_type = yes
 				owner = { is_primitive = no }
@@ -1028,7 +1010,6 @@ worker = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_shared_burden_living_standard_type = yes
@@ -1039,7 +1020,6 @@ worker = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_shared_burden_living_standard_type = yes
@@ -1060,7 +1040,6 @@ worker = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_very_high_living_standard_type = yes
 				owner = { is_primitive = no }
@@ -1070,7 +1049,6 @@ worker = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_very_high_living_standard_type = yes
@@ -1082,7 +1060,6 @@ worker = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_very_high_living_standard_type = yes
@@ -1104,7 +1081,6 @@ worker = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_high_living_standard_type = yes
 				owner = { is_primitive = no }
@@ -1114,7 +1090,6 @@ worker = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_high_living_standard_type = yes
@@ -1125,7 +1100,6 @@ worker = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_high_living_standard_type = yes
@@ -1149,7 +1123,6 @@ worker = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				owner = { is_primitive = no }
 				OR = {
@@ -1162,7 +1135,6 @@ worker = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				owner = { is_primitive = no }
@@ -1177,7 +1149,6 @@ worker = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				owner = { is_primitive = no }
@@ -1202,7 +1173,6 @@ worker = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_stratified_living_standard_type = yes
 				owner = { is_primitive = no }
@@ -1212,7 +1182,6 @@ worker = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_stratified_living_standard_type = yes
@@ -1224,7 +1193,6 @@ worker = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_stratified_living_standard_type = yes
@@ -1246,7 +1214,6 @@ worker = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_lithoid_species = yes
 				has_low_living_standard_type = yes
 				owner = { is_primitive = no }
@@ -1256,7 +1223,6 @@ worker = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 				has_low_living_standard_type = yes
@@ -1268,7 +1234,6 @@ worker = {
 		}
 		upkeep = {
 			trigger = {
-				is_organic_species = yes
 				is_silicoid_species = yes
 				has_trait = trait_electroid
 				has_low_living_standard_type = yes
