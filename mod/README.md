@@ -6,7 +6,7 @@ There are lots of other mods which contain these portraits, so why should you ch
 
 # Changes
 
-All gameplay features from the original mod are upgraded to be fully compatible with Stellaris 3.1.*, the latest version when this was written.  Updates include:
+All gameplay features from the original mod are upgraded to be fully compatible with Stellaris 3.1.1, the latest version when this was written.  Updates include:
 
 * Update the included Contingency-swap shipset `silicoid_01`
     * Ensure the ship entities are blank for ship sections and instead use the ship hull as the attachment point for the Contingency graphics
@@ -47,7 +47,7 @@ This mod is also incompatible with mods that add the same species classes, trait
 
 The Launcher will tell you that some mods are outdated - that is because the dependencies are both out of date with the game's version number.  This mod overwrites and replaces all incompatible code so that the portrait mod will function as originally designed.  You can safely ignore the out-of-date warning for the dependency mods.
 
-Built for Stellaris version 3.1.* "Lem."  Not compatible with achievements.  The shipset does not have NSC classes.
+Built for Stellaris version 3.1.1 "Lem."  Not compatible with achievements.  The shipset does not have NSC classes.
 
 ### Dependencies
 
@@ -76,7 +76,7 @@ This mod overwrites the corresponding species class added by "Silfae's city sets
 * 1.0.3 Fix incomplete fleet name
 * 1.0.4 Ensure correct `graphical_culture`, clean up code for Pop upkeep
 * 1.0.5 Ensure shipset/cityset has correct name
-* 2.0.0 Mark as compatible with Stellaris version 3.1.* "Lem"
+* 2.0.0 Mark as compatible with Stellaris version 3.1.1 "Lem"
     * Add new localisation keys introduced in 3.1
     * Update Pop strata (categories) with updates from base game - adding Budding and Phototropic/Radiotropic
     * Update with code improvements from the base game
