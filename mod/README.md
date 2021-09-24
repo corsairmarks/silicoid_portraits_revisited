@@ -6,14 +6,14 @@ There are lots of other mods which contain these portraits, so why should you ch
 
 # Changes
 
-All gameplay features from the original mod are upgraded to be fully compatible with Stellaris 3.0.*, the latest version when this was written.  Updates include:
+All gameplay features from the original mod are upgraded to be fully compatible with Stellaris 3.1.*, the latest version when this was written.  Updates include:
 
 * Update the included Contingency-swap shipset `silicoid_01`
     * Ensure the ship entities are blank for ship sections and instead use the ship hull as the attachment point for the Contingency graphics
     * Add missing entities and weapon locators
     * Remove duplication
     * Fallback for titans, juggernauts, and colossi is Contingency (`ai_01`), which itself will fall back to mammalian
-* Update silicoid civics to use modifiers available in Stellaris 3.0 (also now available for Lithoids)
+* Update silicoid civics to use modifiers available in modern Stellaris (also now available for Lithoids)
 * Allow silicoids as a secondary species and to spawn randomly (which requires at least one random namelist)
 * Add a silicoid namelist (sourced from a variety of random name generators)
 * Silicoids are now part of the LITHOID archetype (requires Lithoids)
@@ -23,7 +23,7 @@ All gameplay features from the original mod are upgraded to be fully compatible 
     * Lithoids (species class) cannot take any silicoid traits
     * Will work with built-in ascension paths and other gameplay features that require `BIOLOGICAL` or `LITHOID` archetypes
 * Override `pop_categories` in order to balance silicoid Pop upkeep (0.25 food, 0.75 minerals in most situations, 0.25 food and 0.75 energy for Electroids)
-* Update most silicoid traits to work with Stellaris 3.0
+* Update most silicoid traits
     * Update "Sparkly" and "Grotesque" to reduce or increase amenities usage (old effects no longer available)
     * Silicoid and Electroid traits (and Idealized/Demanding Structure) adjusted to work on energy/minerals/food instead of consumer goods
     * The silicoid trait is now a middle ground between biological species and full lithoids - this is a design change from the original so silicoids aren't merely alpha-version lithoids
@@ -37,7 +37,7 @@ All gameplay features from the original mod are upgraded to be fully compatible 
 
 ## Compatibility
 
-This mod has more compatibility concerns than most of my other Silfae's Revisited series.  Because to overwrites `pop_categories` (Pop strata) to adjust silicoid Pop resource upkeep, that makes this mod incompatible with any mods that also adjust Pop strata.  It is explicitly incompatible with [Animated Holosphere Rising Portraits: Revisited](https://steamcommunity.com/sharedfiles/filedetails/?id=2592592503) unless you use the [compatibility patch](https://steamcommunity.com/sharedfiles/filedetails/?id=2596642632).  It's also likely to break any time Stellaris makes changes to the underlying Pop strata, such as the anticipated changes for the upcoming 3.1 'Lem' minor release.  These files are completely overwritten: 
+This mod has more compatibility concerns than most of my other Silfae's Revisited series.  Because to overwrites `pop_categories` (Pop strata) to adjust silicoid Pop resource upkeep, that makes this mod incompatible with any mods that also adjust Pop strata.  It is explicitly incompatible with [Animated Holosphere Rising Portraits: Revisited](https://steamcommunity.com/sharedfiles/filedetails/?id=2592592503) unless you use the [compatibility patch](https://steamcommunity.com/sharedfiles/filedetails/?id=2596642632).  It's also likely to break any time Stellaris makes changes to the underlying Pop strata.  These files are completely overwritten: 
 
 * `common/pop_categories/00_social_classes.txt` - regular empire pop strata
 * `common/pop_categories/01_gestalt_drones.txt` - gestalt empire pop strata
@@ -47,7 +47,7 @@ This mod is also incompatible with mods that add the same species classes, trait
 
 The Launcher will tell you that some mods are outdated - that is because the dependencies are both out of date with the game's version number.  This mod overwrites and replaces all incompatible code so that the portrait mod will function as originally designed.  You can safely ignore the out-of-date warning for the dependency mods.
 
-Not compatible with achievements.  The shipset does not have NSC classes.
+Built for Stellaris version 3.1.* "Lem."  Not compatible with achievements.  The shipset does not have NSC classes.
 
 ### Dependencies
 
@@ -76,6 +76,8 @@ This mod overwrites the corresponding species class added by "Silfae's city sets
 * 1.0.3 Fix incomplete fleet name
 * 1.0.4 Ensure correct `graphical_culture`, clean up code for Pop upkeep
 * 1.0.5 Ensure shipset/cityset has correct name
+* 2.0.0 Mark as compatible with Stellaris version 3.1.* "Lem"
+    * Add new localisation keys introduced in 3.1
 
 ## Source Code
 
