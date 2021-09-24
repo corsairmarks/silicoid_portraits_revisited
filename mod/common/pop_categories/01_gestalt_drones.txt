@@ -53,7 +53,6 @@ complex_drone = {
 			energy = @living_standard_phototrophic_normal
 		}
 
-
 		upkeep = {
 			trigger = {
 				is_organic_species = yes

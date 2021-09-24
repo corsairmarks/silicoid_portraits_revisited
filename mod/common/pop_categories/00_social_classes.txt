@@ -593,6 +593,10 @@ specialist = {
 
 		# Organic Upkeep
 		upkeep = {
+			trigger = { has_phototrophic_energy_upkeep = yes }
+			energy = @living_standard_phototrophic_normal
+		}
+		upkeep = {
 			trigger = {
 				is_organic_species = yes
 				is_phototrophic = no
