@@ -1,7 +1,7 @@
 civic_living_world = {
 	playable = { has_lithoids = yes }
 	ai_playable = { has_lithoids = yes }
-	potential = { species = { value = LITHOID } }
+	potential = { species_archetype = { value = LITHOID } }
 	modifier = {
 		country_unity_produces_mult = 0.15
 	}
@@ -10,7 +10,7 @@ civic_living_world = {
 civic_terraformers = {
 	playable = { has_lithoids = yes }
 	ai_playable = { has_lithoids = yes }
-	potential = { species = { value = LITHOID } }
+	potential = { species_archetype = { value = LITHOID } }
 	modification = no
 	modifier = {
 		terraform_speed_mult = 0.1
