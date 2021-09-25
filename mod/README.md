@@ -79,7 +79,7 @@ This mod overwrites the corresponding species class added by "Silfae's city sets
 * 2.0.0 Mark as compatible with Stellaris version 3.1.1 "Lem"
     * Add new localisation keys introduced in 3.1
     * Update Pop strata (categories) with updates from base game - adding Budding and Phototropic/Radiotropic
-    * Update with code improvements from the base game
+    * Update with code improvements from the base game, including changes to Pop strata
 
 ## Source Code
 
