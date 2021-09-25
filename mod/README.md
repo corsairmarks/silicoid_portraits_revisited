@@ -80,6 +80,7 @@ This mod overwrites the corresponding species class added by "Silfae's city sets
     * Add new localisation keys introduced in 3.1
     * Update Pop strata (categories) with updates from base game - adding Budding and Phototropic/Radiotropic
     * Update with code improvements from the base game, including changes to Pop strata
+* 2.0.1 Ensure shipset/cityset has correct name, again
 
 ## Source Code
 
