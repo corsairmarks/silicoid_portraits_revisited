@@ -82,6 +82,7 @@ This mod overwrites the corresponding species class added by "Silfae's city sets
     * Update with code improvements from the base game, including changes to Pop strata
 * 2.0.1 Ensure shipset/cityset has correct name, again
 * 2.0.2 Verify compatibility with Stellaris 3.1.2 - no code changes
+* 2.1.0 Use new feature to restrict Silicoid traits to the Silicoid species class
 
 ## Source Code
 
