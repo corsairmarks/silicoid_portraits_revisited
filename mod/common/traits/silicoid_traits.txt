@@ -7,7 +7,6 @@ trait_silicoid = {
 	modification = no
 	allowed_archetypes = { LITHOID }
 	opposites = {
-		trait_lithoid
 		# list of regular/lithoid traits silicoids may not use
 		trait_venerable
 		trait_enduring
@@ -25,6 +24,7 @@ trait_silicoid = {
 		army_health = 0.25
 		leader_age = 10
 	}
+	species_class = { SLCOD }
 	ai_weight = {
 		weight = 0
 	}
@@ -35,7 +35,6 @@ trait_melting = {
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
-		trait_lithoid
 		trait_cold_pulse
 		trait_pc_tundra_preference
 		trait_pc_arctic_preference
@@ -55,6 +54,7 @@ trait_melting = {
 		pc_arid_habitability = 0.5
 		pc_savannah_habitability = 0.5
 	}
+	species_class = { SLCOD }
 	slave_cost = {
 		energy = 150
 	}
@@ -65,7 +65,6 @@ trait_cold_pulse = {
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
-		trait_lithoid
 		trait_melting
 		trait_pc_desert_preference
 		trait_pc_arid_preference
@@ -85,6 +84,7 @@ trait_cold_pulse = {
 		pc_arctic_habitability = 0.5
 		pc_alpine_habitability = 0.5
 	}
+	species_class = { SLCOD }
 	slave_cost = {
 		energy = 150
 	}
@@ -95,13 +95,13 @@ trait_sparkly = {
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
-		trait_lithoid
 		trait_grotesque
 		trait_decadent
 	}
 	modifier = {
 		pop_amenities_usage_add = -0.2
 	}
+	species_class = { SLCOD }
 }
 
 trait_grotesque = {
@@ -109,13 +109,13 @@ trait_grotesque = {
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
-		trait_lithoid
 		trait_sparkly
 		trait_decadent
 	}
 	modifier = {
 		pop_amenities_usage_add = 0.2
 	}
+	species_class = { SLCOD }
 	ai_weight = {
 		weight = 0
 	}
@@ -125,39 +125,35 @@ trait_sharp = {
 	cost = 1
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
-	opposites = { trait_lithoid }
 	modifier = {
 		army_damage_mult = 0.3
 	}
+	species_class = { SLCOD }
 }
 
 trait_eternal = {
 	cost = 2
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
-	opposites = {
-		trait_lithoid
-		trait_degrading
-	}
+	opposites = { trait_degrading }
 	modifier = {
 		leader_age = 100
 	}
+	species_class = { SLCOD }
 }
 
 trait_degrading = {
 	cost = -1
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
-	opposites = {
-		trait_lithoid
-		trait_eternal
-	}
+	opposites = { trait_eternal }
 	modifier = {
 		leader_age = -15
 	}
 	ai_weight = {
 		weight = 0
 	}
+	species_class = { SLCOD }
 }
 
 trait_brittle = {
@@ -165,7 +161,6 @@ trait_brittle = {
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
-		trait_lithoid
 		trait_solid_shape
 		trait_resilient
 	}
@@ -180,16 +175,14 @@ trait_brittle = {
 	ai_weight = {
 		weight = 0
 	}
+	species_class = { SLCOD }
 }
 
 trait_solid_shape = {
 	cost = 2
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
-	opposites = {
-		trait_lithoid
-		trait_brittle
-	}
+	opposites = { trait_brittle }
 	modifier = {
 		army_defense_health_mult = 0.8
 		army_defense_morale_mult = 0.25
@@ -197,6 +190,7 @@ trait_solid_shape = {
 	slave_cost = {
 		energy = 50
 	}
+	species_class = { SLCOD }
 }
 
 trait_axiomatic_synapses = {
@@ -204,7 +198,6 @@ trait_axiomatic_synapses = {
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
-		trait_lithoid
 		trait_fluid_synapses
 		trait_intelligent
 		trait_erudite
@@ -228,6 +221,7 @@ trait_axiomatic_synapses = {
 	ai_weight = {
 		weight = 0
 	}
+	species_class = { SLCOD }
 }
 
 trait_fluid_synapses = {
@@ -235,7 +229,6 @@ trait_fluid_synapses = {
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
-		trait_lithoid
 		trait_axiomatic_synapses
 		trait_natural_physicists
 		trait_natural_sociologists
@@ -257,16 +250,14 @@ trait_fluid_synapses = {
 	slave_cost = {
 		energy = 100
 	}
+	species_class = { SLCOD }
 }
 
 trait_demanding_structure = {
 	cost = -1
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
-	opposites = {
-		trait_lithoid
-		trait_idealized_structure
-	}
+	opposites = { trait_idealized_structure }
 	modifier = {
 		planet_pops_energy_upkeep_mult = 0.5
 		planet_pops_minerals_upkeep_mult = 0.5
@@ -275,21 +266,20 @@ trait_demanding_structure = {
 	ai_weight = {
 		weight = 0
 	}
+	species_class = { SLCOD }
 }
 
 trait_idealized_structure = {
 	cost = 2
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
-	opposites = {
-		trait_lithoid
-		trait_demanding_structure
-	}
+	opposites = { trait_demanding_structure }
 	modifier = {
 		planet_pops_energy_upkeep_mult = -0.5
 		planet_pops_minerals_upkeep_mult = -0.5
 		planet_pops_food_upkeep_mult = -0.5
 	}
+	species_class = { SLCOD }
 }
 
 trait_electroid = {
@@ -297,37 +287,33 @@ trait_electroid = {
 	potential_crossbreeding_chance = 1.0
 	modification = no
 	allowed_archetypes = { LITHOID }
-	opposites = { trait_lithoid }
 	custom_tooltip = TRAIT_ELECTROID_EFFECT
+	species_class = { SLCOD }
 }
 
 trait_rooted = {
 	cost = -1
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
-	opposites = {
-		trait_lithoid
-		trait_roaming
-	}
+	opposites = { trait_roaming }
 	modifier = {
 		pop_growth_from_immigration = -0.25
 	}
 	ai_weight = {
 		weight = 0
 	}
+	species_class = { SLCOD }
 }
 
 trait_roaming = {
 	cost = 1
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
-	opposites = {
-		trait_lithoid
-		trait_rooted
-	}
+	opposites = { trait_rooted }
 	modifier = {
 		pop_growth_from_immigration = 0.25
 	}
+	species_class = { SLCOD }
 }
 
 trait_compact = {
@@ -335,7 +321,6 @@ trait_compact = {
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
-		trait_lithoid
 		trait_traditional
 		trait_quarrelsome
 		trait_communal
@@ -346,4 +331,5 @@ trait_compact = {
 		pop_housing_usage_mult = -0.15
 		pop_happiness = 0.05
 	}
+	species_class = { SLCOD }
 }
