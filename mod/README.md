@@ -6,7 +6,7 @@ There are lots of other mods which contain these portraits, so why should you ch
 
 # Changes
 
-All gameplay features from the original mod are upgraded to be fully compatible with Stellaris 3.1.2, the latest version when this was written.  Updates include:
+All gameplay features from the original mod are upgraded to be fully compatible with Stellaris 3.2.1, the latest version when this was written.  Updates include:
 
 * Update the included Contingency-swap shipset `silicoid_01`
     * Ensure the ship entities are blank for ship sections and instead use the ship hull as the attachment point for the Contingency graphics
@@ -34,6 +34,7 @@ All gameplay features from the original mod are upgraded to be fully compatible 
     * Tacloriotans now also have Sparkly - they had an unused trait pick
     * Taclariotans now use the new `SLCOD1` namelist instead of `ART1`
 * Add a second Alt. Silicoid species class (`SLCODALT` which cannot randomly spawn) that contains the same portraits, but uses the default lithoid features without any of the above changes
+* Silicoid portraits with sexual dimorphism support mono-gendered species (as of Stellaris 3.2)
 
 ## Compatibility
 
@@ -47,7 +48,7 @@ This mod is also incompatible with mods that add the same species classes, trait
 
 The Launcher will tell you that some mods are outdated - that is because the dependencies are both out of date with the game's version number.  This mod overwrites and replaces all incompatible code so that the portrait mod will function as originally designed.  You can safely ignore the out-of-date warning for the dependency mods.
 
-Built for Stellaris version 3.1.2 "Lem."  Not compatible with achievements.  The shipset does not have NSC classes.
+Built for Stellaris version 3.2.1 "Herbert."  Not compatible with achievements.  The shipset does not have NSC classes.
 
 ### Dependencies
 
@@ -76,13 +77,17 @@ This mod overwrites the corresponding species class added by "Silfae's city sets
 * 1.0.3 Fix incomplete fleet name
 * 1.0.4 Ensure correct `graphical_culture`, clean up code for Pop upkeep
 * 1.0.5 Ensure shipset/cityset has correct name
-* 2.0.0 Mark as compatible with Stellaris version 3.1.1 "Lem"
+* 2.0.0 Update for compatibility with Stellaris version 3.1.1 "Lem"
     * Add new localisation keys introduced in 3.1
     * Update Pop strata (categories) with updates from base game - adding Budding and Phototropic/Radiotropic
     * Update with code improvements from the base game, including changes to Pop strata
 * 2.0.1 Ensure shipset/cityset has correct name, again
 * 2.0.2 Verify compatibility with Stellaris 3.1.2 - no code changes
 * 2.1.0 Use new feature to restrict Silicoid traits to the Silicoid species class
+* 3.0.0 Update for compatibility with Stellaris version 3.2.1 "Herbert"
+    * Apply new mono-gender portrait rules
+    * Molten and Cold Pulse require homeworlds of the appropriate cold/hot types
+    * Mark prescipted empires as genderless
 
 ## Source Code
 
