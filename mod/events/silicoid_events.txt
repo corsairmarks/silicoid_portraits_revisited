@@ -40,7 +40,15 @@ planet_event = {
 	}
 	immediate = {
 		if = {
-			limit = { is_planet_class = pc_hive }
+			limit = {
+				OR = {
+					is_planet_class = pc_hive
+					AND = {
+						is_planet_class = pc_ocean
+						owner = { is_anglers_empire = yes }
+					}
+				}
+			}
 			while = {
 				limit = {
 					num_districts = {
