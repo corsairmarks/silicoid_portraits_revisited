@@ -36,17 +36,22 @@ trait_melting = {
 	allowed_archetypes = { LITHOID }
 	opposites = {
 		trait_cold_pulse
-		trait_pc_tundra_preference
-		trait_pc_arctic_preference
 		trait_pc_alpine_preference
+		trait_pc_arctic_preference
+		trait_pc_tundra_preference
+	}
+	allowed_planet_classes = {
+		pc_arid
+		pc_desert
+		pc_savannah
 	}
 	species_potential_add = {
 		exists = THIS
 		is_scope_type = species
 		NOR = {
-			ideal_planet_class = pc_tundra
-			ideal_planet_class = pc_arctic
 			ideal_planet_class = pc_alpine
+			ideal_planet_class = pc_arctic
+			ideal_planet_class = pc_tundra
 		}
 	}
 	modifier = {
@@ -66,23 +71,28 @@ trait_cold_pulse = {
 	allowed_archetypes = { LITHOID }
 	opposites = {
 		trait_melting
-		trait_pc_desert_preference
 		trait_pc_arid_preference
+		trait_pc_desert_preference
 		trait_pc_savannah_preference
+	}
+	allowed_planet_classes = {
+		pc_alpine
+		pc_arctic
+		pc_tundra
 	}
 	species_potential_add = {
 		exists = THIS
 		is_scope_type = species
 		NOR = {
-			ideal_planet_class = pc_desert
 			ideal_planet_class = pc_arid
+			ideal_planet_class = pc_desert
 			ideal_planet_class = pc_savannah
 		}
 	}
 	modifier = {
-		pc_tundra_habitability = 0.5
-		pc_arctic_habitability = 0.5
 		pc_alpine_habitability = 0.5
+		pc_arctic_habitability = 0.5
+		pc_tundra_habitability = 0.5
 	}
 	species_class = { SLCOD }
 	slave_cost = {
