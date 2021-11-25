@@ -87,7 +87,8 @@ This mod overwrites the corresponding species class added by "Silfae's city sets
 * 3.0.0 Update for compatibility with Stellaris version 3.2.1 "Herbert"
     * Apply new mono-gender portrait rules
     * Molten and Cold Pulse require homeworlds of the appropriate cold/hot types
-    * Mark prescipted empires as genderless
+    * Mark prescripted empires as genderless
+    * Pop strata (`pop_categories`) problem (decadent robots no upkeep) was already been patched by this mod
 
 ## Source Code
 
