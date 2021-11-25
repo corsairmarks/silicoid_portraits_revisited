@@ -3,27 +3,13 @@ portrait_groups = {
 		default = silicoid_male_01
 		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
 			add = {
-				trigger = {
-					ruler = {
-						OR = {
-							gender = male
-							gender = indeterminable
-						}
-					}
-				}
+				trigger = { ruler = { NOT = { gender = female } } }
 				portraits = {
 					silicoid_male_01
 				}
 			}
 			add = {
-				trigger = {
-					ruler = {
-						OR = {
-							gender = female
-							gender = indeterminable
-						}
-					}
-				}
+				trigger = { ruler = { NOT = { gender = male } } }
 				portraits = {
 					silicoid_female_01
 				}
@@ -66,23 +52,13 @@ portrait_groups = {
 		#leader scope
 		leader = { #scientists, generals, admirals, governors, envoys
 			add = {
-				trigger = {
-					OR = {
-						gender = female
-						gender = indeterminable
-					}
-				}
+				trigger = { NOT = { gender = male } }
 				portraits = {
 					silicoid_female_01
 				}
 			}
 			add = {
-				trigger = {
-					OR = {
-						gender = male
-						gender = indeterminable
-					}
-				}
+				trigger = { NOT = { gender = female } }
 				portraits = {
 					silicoid_male_01
 				}
@@ -92,23 +68,13 @@ portrait_groups = {
 		#leader scope
 		ruler = {
 			add = {
-				trigger = {
-					OR = {
-						gender = female
-						gender = indeterminable
-					}
-				}
+				trigger = { NOT = { gender = male } }
 				portraits = {
 					silicoid_female_01
 				}
 			}
 			add = {
-				trigger = {
-					OR = {
-						gender = male
-						gender = indeterminable
-					}
-				}
+				trigger = { NOT = { gender = female } }
 				portraits = {
 					silicoid_male_01
 				}
@@ -119,34 +85,19 @@ portrait_groups = {
 		default = silicoid_male_04
 		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
 			add = {
-				trigger = {
-					ruler = {
-						OR = {
-							gender = male
-							gender = indeterminable
-						}
-					}
-				}
+				trigger = { ruler = { NOT = { gender = female } } }
 				portraits = {
 					silicoid_male_04
 					silicoid_rulermale_04
 				}
 			}
 			add = {
-				trigger = {
-					ruler = {
-						OR = {
-							gender = female
-							gender = indeterminable
-						}
-					}
-				}
+				trigger = { ruler = { NOT = { gender = male } } }
 				portraits = {
 					silicoid_female_04
 					silicoid_rulerfemale_04
 				}
 			}
-
 		}
 
 		#species scope
@@ -186,23 +137,13 @@ portrait_groups = {
 		#leader scope
 		leader = { #scientists, generals, admirals, governors, envoys
 			add = {
-				trigger = {
-					OR = {
-						gender = female
-						gender = indeterminable
-					}
-				}
+				trigger = { NOT = { gender = male } }
 				portraits = {
 					silicoid_female_04
 				}
 			}
 			add = {
-				trigger = {
-					OR = {
-						gender = male
-						gender = indeterminable
-					}
-				}
+				trigger = { NOT = { gender = female } }
 				portraits = {
 					silicoid_male_04
 				}
@@ -212,23 +153,13 @@ portrait_groups = {
 		#leader scope
 		ruler = {
 			add = {
-				trigger = {
-					OR = {
-						gender = female
-						gender = indeterminable
-					}
-				}
+				trigger = { NOT = { gender = male } }
 				portraits = {
 					silicoid_rulerfemale_04
 				}
 			}
 			add = {
-				trigger = {
-					OR = {
-						gender = male
-						gender = indeterminable
-					}
-				}
+				trigger = { NOT = { gender = female } }
 				portraits = {
 					silicoid_rulermale_04
 				}
