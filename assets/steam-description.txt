@@ -6,7 +6,7 @@ There are lots of other mods which contain these portraits, so why should you ch
 
 [h1]Changes[/h1]
 
-All gameplay features from the original mod are upgraded to be fully compatible with Stellaris 3.2.1, the latest version when this was written.  Updates include:
+All gameplay features from the original mod are upgraded to be fully compatible with Stellaris 3.2.2, the latest version when this was written.  Updates include:
 
 [list]
 [*]Update the included Contingency-swap shipset [b]silicoid_01[/b]
@@ -60,7 +60,7 @@ This mod is also incompatible with mods that add the same species classes, trait
 
 The Launcher will tell you that some mods are outdated - that is because the dependencies are both out of date with the game's version number.  This mod overwrites and replaces all incompatible code so that the portrait mod will function as originally designed.  You can safely ignore the out-of-date warning for the dependency mods.
 
-Built for Stellaris version 3.2.1 "Herbert."  Not compatible with achievements.  The shipset does not have NSC classes.
+Built for Stellaris version 3.2.2 "Herbert."  Not compatible with achievements.  The shipset does not have NSC classes.
 
 [h3]Dependencies[/h3]
 
