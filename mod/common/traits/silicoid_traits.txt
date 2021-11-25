@@ -44,6 +44,12 @@ trait_melting = {
 		pc_arid
 		pc_desert
 		pc_savannah
+		pc_continental
+		pc_ocean
+		pc_tropical
+		pc_gaia
+		pc_shattered_ring_habitable
+		pc_habitat
 	}
 	species_potential_add = {
 		exists = THIS
@@ -79,6 +85,12 @@ trait_cold_pulse = {
 		pc_alpine
 		pc_arctic
 		pc_tundra
+		pc_continental
+		pc_ocean
+		pc_tropical
+		pc_gaia
+		pc_shattered_ring_habitable
+		pc_habitat
 	}
 	species_potential_add = {
 		exists = THIS

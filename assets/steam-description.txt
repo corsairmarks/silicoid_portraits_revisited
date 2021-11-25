@@ -23,6 +23,7 @@ All gameplay features from the original mod are upgraded to be fully compatible 
     [list]
     [*]They remain a separate Silicoid ([b]SLCOD[/b]) species class
     [*]Can use many common built-in traits (although some are specifically omitted by making [b]trait_silicoid[/b] incompatible with them)
+    [*]Molten cannot be taken by species starting on cold worlds, Cold Pulse cannot be taken by species starting on warm worlds - this restriction applies to any origin that allows you can select your species' ideal climate
     [*]Can use (most) Lithoid traits and unique silicoid traits
     [*]Lithoids (species class) cannot take any silicoid traits
     [*]Will work with built-in ascension paths and other gameplay features that require [b]BIOLOGICAL[/b] or [b]LITHOID[/b] archetypes

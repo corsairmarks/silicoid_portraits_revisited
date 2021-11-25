@@ -19,6 +19,7 @@ All gameplay features from the original mod are upgraded to be fully compatible 
 * Silicoids are now part of the LITHOID archetype (requires Lithoids)
     * They remain a separate Silicoid (`SLCOD`) species class
     * Can use many common built-in traits (although some are specifically omitted by making `trait_silicoid` incompatible with them)
+    * Molten cannot be taken by species starting on cold worlds, Cold Pulse cannot be taken by species starting on warm worlds - this restriction applies to any origin that allows you can select your species' ideal climate
     * Can use (most) Lithoid traits and unique silicoid traits
     * Lithoids (species class) cannot take any silicoid traits
     * Will work with built-in ascension paths and other gameplay features that require `BIOLOGICAL` or `LITHOID` archetypes
@@ -86,7 +87,7 @@ This mod overwrites the corresponding species class added by "Silfae's city sets
 * 2.1.0 Use new feature to restrict Silicoid traits to the Silicoid species class
 * 3.0.0 Update for compatibility with Stellaris version 3.2.2 "Herbert"
     * Apply new mono-gender portrait rules
-    * Molten and Cold Pulse require homeworlds of the appropriate cold/hot types
+    * Molten and Cold Pulse require homeworlds that are not the opposite cold/hot types
     * Mark prescripted empires as genderless
     * Pop strata (`pop_categories`) problem (decadent robots no upkeep) was already been patched by this mod
 
