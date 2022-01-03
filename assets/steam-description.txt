@@ -7,7 +7,6 @@ There are lots of other mods which contain these portraits, so why should you ch
 [h1]Changes[/h1]
 
 All gameplay features from the original mod are upgraded to be fully compatible with Stellaris 3.2.2, the latest version when this was written.  Updates include:
-
 [list]
 [*]Update the included Contingency-swap shipset [b]silicoid_01[/b]
     [list]
@@ -46,17 +45,14 @@ All gameplay features from the original mod are upgraded to be fully compatible 
 [*]Add a second Alt. Silicoid species class ([b]SLCODALT[/b] which cannot randomly spawn) that contains the same portraits, but uses the default lithoid features without any of the above changes
 [*]Silicoid portraits with sexual dimorphism support mono-gendered species (as of Stellaris 3.2)
 [/list]
-
 [h2]Compatibility[/h2]
 
 This mod has more compatibility concerns than most of my other Silfae's Revisited series.  Because to overwrites [b]pop_categories[/b] (Pop strata) to adjust silicoid Pop resource upkeep, that makes this mod incompatible with any mods that also adjust Pop strata.  It is explicitly incompatible with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2592592503]Animated Holosphere Rising Portraits: Revisited[/url] unless you use the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2596642632]compatibility patch[/url].  It's also likely to break any time Stellaris makes changes to the underlying Pop strata.  These files are completely overwritten: 
-
 [list]
 [*][b]common/pop_categories/00_social_classes.txt[/b] - regular empire pop strata
 [*][b]common/pop_categories/01_gestalt_drones.txt[/b] - gestalt empire pop strata
 [*][b]common/pop_categories/02_other_categories.txt[/b] - precursors, criminals/deviants, and miscellaneous pop strata
 [/list]
-
 This mod is also incompatible with mods that add the same species classes, traits, shipset (by name - other reuses of the Contingency will be compatible), or art assets (portraits and meshes).
 
 The Launcher will tell you that some mods are outdated - that is because the dependencies are both out of date with the game's version number.  This mod overwrites and replaces all incompatible code so that the portrait mod will function as originally designed.  You can safely ignore the out-of-date warning for the dependency mods.
@@ -66,12 +62,10 @@ Built for Stellaris version 3.2.2 "Herbert."  Not compatible with achievements. 
 [h3]Dependencies[/h3]
 
 In order for this mod to function, you [b]must[/b] install these two mods and load them before this one:
-
 [list]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1160316076]Animated Silicoid Portraits[/url] by Silfae
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2247427791]Silfae's city sets updated[/url] by Nozeminer
 [/list]
-
 [h3]When to Install[/h3]
 
 This mod should be added before the game has started.  If you remove it from a game in progress, your game may have graphical problems if any species was using the custom portraits or city graphics.
@@ -79,11 +73,9 @@ This mod should be added before the game has started.  If you remove it from a g
 [h2]Known Issues[/h2]
 
 This mod overwrites the corresponding species class added by "Silfae's city sets updated" so that it will not be available for use.  Instead, the original species class from Silfae (with localisation) is used.  Expect to see one line in error.log like this:
-
 [code]
 [00:50:44][game_singleobjectdatabase.h:147]: Object with key: Silfae-Silicoid already exists
 [/code]
-
 [h2]Changelog[/h2]
 
 See [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2579736379]Change Notes[/url]
