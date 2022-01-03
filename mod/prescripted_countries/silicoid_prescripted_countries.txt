@@ -54,7 +54,7 @@ silicoid_empire1 = {
 	spawn_as_fallen = no
 	room = "personality_federation_builders_room"
 	spawn_enabled = yes
-	ignore_portrait_duplication = yes
+	ignore_portrait_duplication = no
 	ethic = ethic_authoritarian
 	# Originally had Xenophobe instead of Fanatic Materialist, but Technocracy now requires Fanatic Materialist.
 	# Given that the government is Imperial, it seemed more appropriate to retain Authoritarian.
@@ -119,7 +119,7 @@ silicoid_empire2 = {
 		leader_class = ruler
 	}
 	spawn_as_fallen = no
-	ignore_portrait_duplication = yes
+	ignore_portrait_duplication = no
 	room = "personality_xenophobic_isolationists_room"
 	spawn_enabled = yes
 	ethic = ethic_fanatic_authoritarian
