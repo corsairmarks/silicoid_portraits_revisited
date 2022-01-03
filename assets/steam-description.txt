@@ -1,11 +1,9 @@
 [h1]Overview[/h1]
-
 Do you dream of glassy silicoids?  Or perhaps you'd like some rock-people with sexual dimorphism?  Silfae's "Animated Silicoid Portraits" mod delivers several different options for portraits and extra gameplay features.  Do you wish the gameplay elements were up-to-date so that you can play the Taclariotan Influence or Mandate of Druerd as designed?  Then this mod is for you!
 
 There are lots of other mods which contain these portraits, so why should you choose this one?  None of the others update the species traits, custom empires, or shipset, but this one does!  Please enjoy my translation of Silfae's custom empire into modern Stellaris.
 
 [h1]Changes[/h1]
-
 All gameplay features from the original mod are upgraded to be fully compatible with Stellaris 3.2.2, the latest version when this was written.  Updates include:
 [list]
 [*]Update the included Contingency-swap shipset [b]silicoid_01[/b]
@@ -46,7 +44,6 @@ All gameplay features from the original mod are upgraded to be fully compatible 
 [*]Silicoid portraits with sexual dimorphism support mono-gendered species (as of Stellaris 3.2)
 [/list]
 [h2]Compatibility[/h2]
-
 This mod has more compatibility concerns than most of my other Silfae's Revisited series.  Because to overwrites [b]pop_categories[/b] (Pop strata) to adjust silicoid Pop resource upkeep, that makes this mod incompatible with any mods that also adjust Pop strata.  It is explicitly incompatible with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2592592503]Animated Holosphere Rising Portraits: Revisited[/url] unless you use the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2596642632]compatibility patch[/url].  It's also likely to break any time Stellaris makes changes to the underlying Pop strata.  These files are completely overwritten: 
 [list]
 [*][b]common/pop_categories/00_social_classes.txt[/b] - regular empire pop strata
@@ -60,32 +57,26 @@ The Launcher will tell you that some mods are outdated - that is because the dep
 Built for Stellaris version 3.2.2 "Herbert."  Not compatible with achievements.  The shipset does not have NSC classes.
 
 [h3]Dependencies[/h3]
-
 In order for this mod to function, you [b]must[/b] install these two mods and load them before this one:
 [list]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1160316076]Animated Silicoid Portraits[/url] by Silfae
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2247427791]Silfae's city sets updated[/url] by Nozeminer
 [/list]
 [h3]When to Install[/h3]
-
 This mod should be added before the game has started.  If you remove it from a game in progress, your game may have graphical problems if any species was using the custom portraits or city graphics.
 
 [h2]Known Issues[/h2]
-
 This mod overwrites the corresponding species class added by "Silfae's city sets updated" so that it will not be available for use.  Instead, the original species class from Silfae (with localisation) is used.  Expect to see one line in error.log like this:
 [code]
 [00:50:44][game_singleobjectdatabase.h:147]: Object with key: Silfae-Silicoid already exists
 [/code]
 [h2]Changelog[/h2]
-
 See [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2579736379]Change Notes[/url]
 
 [h2]Source Code[/h2]
-
 Hosted on [url=https://github.com/corsairmarks/silicoid_portraits_revisited]GitHub[/url].
 
 [h1]Special Thanks[/h1]
-
 I was inspired to extend the original mod when I saw [url=https://steamcommunity.com/profiles/76561198037630876/myworkshopfiles/]Endugu[/url]'s [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1584824947]expansion[/url] of [url=https://steamcommunity.com/profiles/76561198021525667/myworkshopfiles/]Silfae[/url]'s [url=https://steamcommunity.com/workshop/filedetails/?id=881118424]Animated Xirmian Portraits[/url].  Modular mods that require downloading the original mod(s) help give credit where credit is due.
 
 An extra special thanks to Silfae for creating and sharing so many detailed, animated portraits for the community.

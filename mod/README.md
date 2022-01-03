@@ -90,6 +90,7 @@ This mod overwrites the corresponding species class added by "Silfae's city sets
     * Molten and Cold Pulse require homeworlds that are not the opposite cold/hot types
     * Mark prescripted empires as genderless
     * Pop strata (`pop_categories`) problem (decadent robots no upkeep) was already been patched by this mod
+* 3.0.1 No longer ignore portrait duplication for the pre-scripted empire
 
 ## Source Code
 
