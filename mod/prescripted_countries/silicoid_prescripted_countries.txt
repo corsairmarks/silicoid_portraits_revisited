@@ -56,10 +56,8 @@ silicoid_empire1 = {
 	spawn_enabled = yes
 	ignore_portrait_duplication = no
 	ethic = ethic_authoritarian
-	# Originally had Xenophobe instead of Fanatic Materialist, but Technocracy now requires Fanatic Materialist.
-	# Given that the government is Imperial, it seemed more appropriate to retain Authoritarian.
-	# ethic = ethic_xenophobe
-	ethic = ethic_fanatic_materialist
+	ethic = ethic_xenophobe
+	ethic = ethic_materialist
 	civics = {
 		"civic_terraformers"
 		"civic_technocracy"
