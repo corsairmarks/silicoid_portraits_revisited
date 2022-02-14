@@ -6,7 +6,7 @@ There are lots of other mods which contain these portraits, so why should you ch
 
 # Changes
 
-All gameplay features from the original mod are upgraded to be fully compatible with Stellaris 3.2.2, the latest version when this was written.  Updates include:
+All gameplay features from the original mod are upgraded to be fully compatible with Stellaris 3.3 "Libra," the latest version when this was written.  Updates include:
 
 * Update the included Contingency-swap shipset `silicoid_01`
     * Ensure the ship entities are blank for ship sections and instead use the ship hull as the attachment point for the Contingency graphics
@@ -31,7 +31,6 @@ All gameplay features from the original mod are upgraded to be fully compatible 
     * Some trait effects tweaked with an eye towards vanilla balance
 * Adjust silicoid setup event to ensure at least 1 farming district on their homeworlds
 * Update prescripted empires
-    * Taclariotan Influence is now Fanatic Materialist/Authoritarian to meet the requirements for Technocracy - lost Xenophobe to compensate
     * Tacloriotans now also have Sparkly - they had an unused trait pick
     * Taclariotans now use the new `SLCOD1` namelist instead of `ART1`
 * Add a second Alt. Silicoid species class (`SLCODALT` which cannot randomly spawn) that contains the same portraits, but uses the default lithoid features without any of the above changes
@@ -49,7 +48,7 @@ This mod is also incompatible with mods that add the same species classes, trait
 
 The Launcher will tell you that some mods are outdated - that is because the dependencies are both out of date with the game's version number.  This mod overwrites and replaces all incompatible code so that the portrait mod will function as originally designed.  You can safely ignore the out-of-date warning for the dependency mods.
 
-Built for Stellaris version 2 "Herbert."  Not compatible with achievements.  The shipset does not have NSC classes.
+Built for Stellaris version 3.3 "Libra."  Not compatible with achievements.  The shipset does not have NSC classes.
 
 ### Dependencies
 
@@ -91,6 +90,9 @@ This mod overwrites the corresponding species class added by "Silfae's city sets
     * Mark prescripted empires as genderless
     * Pop strata (`pop_categories`) problem (decadent robots no upkeep) was already been patched by this mod
 * 3.0.1 No longer ignore portrait duplication for the pre-scripted empire
+* 4.0.0 Update for compatibility with Stellaris version 3.3 "Libra"
+    * Technocracy no longer requires Fanatic materialist, so the Taclariotan influence is once again has its original ethos: authoritarian, xenophobic, materialist
+    * Adjusted species traits for 3.3 "Libra" changes
 
 ## Source Code
 

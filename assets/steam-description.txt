@@ -4,7 +4,7 @@ Do you dream of glassy silicoids?  Or perhaps you'd like some rock-people with s
 There are lots of other mods which contain these portraits, so why should you choose this one?  None of the others update the species traits, custom empires, or shipset, but this one does!  Please enjoy my translation of Silfae's custom empire into modern Stellaris.
 
 [h1]Changes[/h1]
-All gameplay features from the original mod are upgraded to be fully compatible with Stellaris 3.2.2, the latest version when this was written.  Updates include:
+All gameplay features from the original mod are upgraded to be fully compatible with Stellaris 3.3 "Libra," the latest version when this was written.  Updates include:
 [list]
 [*]Update the included Contingency-swap shipset [b]silicoid_01[/b]
     [list]
@@ -36,7 +36,6 @@ All gameplay features from the original mod are upgraded to be fully compatible 
 [*]Adjust silicoid setup event to ensure at least 1 farming district on their homeworlds
 [*]Update prescripted empires
     [list]
-    [*]Taclariotan Influence is now Fanatic Materialist/Authoritarian to meet the requirements for Technocracy - lost Xenophobe to compensate
     [*]Tacloriotans now also have Sparkly - they had an unused trait pick
     [*]Taclariotans now use the new [b]SLCOD1[/b] namelist instead of [b]ART1[/b]
     [/list]
@@ -54,7 +53,7 @@ This mod is also incompatible with mods that add the same species classes, trait
 
 The Launcher will tell you that some mods are outdated - that is because the dependencies are both out of date with the game's version number.  This mod overwrites and replaces all incompatible code so that the portrait mod will function as originally designed.  You can safely ignore the out-of-date warning for the dependency mods.
 
-Built for Stellaris version 3.2.2 "Herbert."  Not compatible with achievements.  The shipset does not have NSC classes.
+Built for Stellaris version 3.3 "Libra."  Not compatible with achievements.  The shipset does not have NSC classes.
 
 [h3]Dependencies[/h3]
 In order for this mod to function, you [b]must[/b] install these two mods and load them before this one:
