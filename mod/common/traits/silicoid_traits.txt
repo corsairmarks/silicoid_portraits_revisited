@@ -4,7 +4,9 @@ trait_silicoid = {
 	sorting_priority = 20
 	initial = yes
 	randomized = no
-	modification = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
+	species_possible_merge_add = { always = no }
 	allowed_archetypes = { LITHOID }
 	opposites = {
 		# list of regular/lithoid traits silicoids may not use
@@ -48,22 +50,20 @@ trait_melting = {
 		pc_ocean
 		pc_tropical
 		pc_gaia
+		pc_nuked
 		pc_shattered_ring_habitable
 		pc_habitat
 	}
 	species_potential_add = {
-		exists = THIS
-		is_scope_type = species
 		NOR = {
 			ideal_planet_class = pc_alpine
 			ideal_planet_class = pc_arctic
 			ideal_planet_class = pc_tundra
 		}
 	}
-	modifier = {
-		pc_desert_habitability = 0.5
-		pc_arid_habitability = 0.5
-		pc_savannah_habitability = 0.5
+	triggered_planet_growth_habitability_modifier = {
+		potential = { is_dry = yes }
+		pop_environment_tolerance = 0.5
 	}
 	species_class = { SLCOD }
 	slave_cost = {
@@ -89,22 +89,20 @@ trait_cold_pulse = {
 		pc_ocean
 		pc_tropical
 		pc_gaia
+		pc_nuked
 		pc_shattered_ring_habitable
 		pc_habitat
 	}
 	species_potential_add = {
-		exists = THIS
-		is_scope_type = species
 		NOR = {
 			ideal_planet_class = pc_arid
 			ideal_planet_class = pc_desert
 			ideal_planet_class = pc_savannah
 		}
 	}
-	modifier = {
-		pc_alpine_habitability = 0.5
-		pc_arctic_habitability = 0.5
-		pc_tundra_habitability = 0.5
+	triggered_planet_growth_habitability_modifier = {
+		potential = { is_cold = yes }
+		pop_environment_tolerance = 0.5
 	}
 	species_class = { SLCOD }
 	slave_cost = {
@@ -230,6 +228,7 @@ trait_axiomatic_synapses = {
 		trait_enigmatic_intelligence_poor
 		trait_presapient_natural_intellectuals
 		trait_quick_learners
+		trait_slow_learners
 	}
 	modifier = {
 		species_leader_exp_gain = -0.25
@@ -261,6 +260,7 @@ trait_fluid_synapses = {
 		trait_nerve_stapled
 		trait_syncretic_proles
 		trait_presapient_proles
+		trait_quick_learners
 		trait_slow_learners
 	}
 	modifier = {
@@ -307,7 +307,9 @@ trait_idealized_structure = {
 trait_electroid = {
 	cost = -1
 	potential_crossbreeding_chance = 1.0
-	modification = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
+	species_possible_merge_add = { always = no }
 	allowed_archetypes = { LITHOID }
 	custom_tooltip = TRAIT_ELECTROID_EFFECT
 	species_class = { SLCOD }
