@@ -57,7 +57,13 @@ planet_event = {
 					}
 				}
 				add_district = district_farming_uncapped
-				remove_district = district_mining_uncapped
+				if = {
+					limit = { is_planet_class = pc_hive }
+					remove_district = district_mining_uncapped
+				}
+				else = {
+					remove_district = district_mining
+				}
 			}
 		}
 		else_if = {
