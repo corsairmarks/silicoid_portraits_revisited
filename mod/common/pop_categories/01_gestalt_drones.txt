@@ -31,13 +31,11 @@ complex_drone = {
 				}
 			}
 		}
-		influence = 10
+		unity = 10
 	}
 
 	triggered_planet_modifier = {
-		potential = {
-			can_assemble_budding_pop = yes
-		}
+		potential = { can_assemble_budding_pop = yes }
 		planet_pop_assembly_organic_add = @plantoid_budding_rate
 	}
 
@@ -48,11 +46,11 @@ complex_drone = {
 	resources = {
 		category = pop_category_drones
 
+		# Biological Upkeep
 		upkeep = {
 			trigger = { has_phototrophic_energy_upkeep = yes }
 			energy = @living_standard_phototrophic_normal
 		}
-
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
@@ -61,61 +59,52 @@ complex_drone = {
 			}
 			food = @living_standard_food_normal
 		}
-
 		upkeep = {
 			trigger = { is_phototrophic = yes }
 			food = @living_standard_phototrophic_normal
 		}
 
+		# Lithoid and Silicoid Upkeep
 		upkeep = {
 			trigger = { is_lithoid_species = yes }
 			minerals = @living_standard_food_normal
 		}
-
 		upkeep = {
 			trigger = {
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 			}
 			minerals = @living_standard_minerals_normal_silicoid
-			food = @living_standard_food_normal_silicoid
 		}
-
 		upkeep = {
 			trigger = {
 				is_silicoid_species = yes
-				has_trait = trait_electroid
+				has_electroid_energy_upkeep = yes
 			}
 			energy = @living_standard_energy_normal_electroid
+		}
+		upkeep = {
+			trigger = { is_silicoid_species = yes }
 			food = @living_standard_food_normal_silicoid
 		}
 
+		# Robotic Upkeep
 		upkeep = {
 			trigger = { is_robotic_species = yes }
 			energy = @living_standard_energy_normal
 		}
 
+		# Resource Production
 		produces = {
-			trigger = {
-				is_lithoid = yes
-				has_trait = trait_lithoid_scintillating
-			}
+			trigger = { has_trait = trait_lithoid_scintillating }
 			rare_crystals = @lithoid_trait_resource_production
 		}
-
 		produces = {
-			trigger = {
-				is_lithoid = yes
-				has_trait = trait_lithoid_gaseous_byproducts
-			}
+			trigger = { has_trait = trait_lithoid_gaseous_byproducts }
 			exotic_gases = @lithoid_trait_resource_production
 		}
-
 		produces = {
-			trigger = {
-				is_lithoid = yes
-				has_trait = trait_lithoid_volatile_excretions
-			}
+			trigger = { has_trait = trait_lithoid_volatile_excretions }
 			volatile_motes = @lithoid_trait_resource_production
 		}
 	}
@@ -159,24 +148,18 @@ simple_drone = {
 				}
 			}
 		}
-		influence = 10
+		unity = 10
 	}
 
 	triggered_planet_modifier = {
-		potential = {
-			can_assemble_budding_pop = yes
-		}
+		potential = { can_assemble_budding_pop = yes }
 		planet_pop_assembly_organic_add = @plantoid_budding_rate
 	}
 
 	unemployment_resources = {
 		category = unemployment_resources
 		produces = {
-			trigger = {
-				owner = {
-					is_hive_empire = yes
-				}
-			}
+			trigger = { owner = { is_hive_empire = yes } }
 			minerals = 1
 		}
 		produces = {
@@ -190,18 +173,17 @@ simple_drone = {
 			engineering_research = 1
 			society_research = 1.5
 		}
-		upkeep = {
-		}
+		upkeep = { }
 	}
 
 	resources = {
 		category = pop_category_drones
 
+		# Biological Upkeep
 		upkeep = {
 			trigger = { has_phototrophic_energy_upkeep = yes }
 			energy = @living_standard_phototrophic_normal
 		}
-
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
@@ -210,71 +192,52 @@ simple_drone = {
 			}
 			food = @living_standard_food_normal
 		}
-
 		upkeep = {
 			trigger = { is_phototrophic = yes }
 			food = @living_standard_phototrophic_normal
 		}
 
+		# Lithoid and Silicoid Upkeep
 		upkeep = {
 			trigger = { is_lithoid_species = yes }
 			minerals = @living_standard_food_normal
 		}
-
 		upkeep = {
 			trigger = {
 				is_silicoid_species = yes
 				NOT = { has_trait = trait_electroid }
 			}
 			minerals = @living_standard_minerals_normal_silicoid
-			food = @living_standard_food_normal_silicoid
 		}
-
 		upkeep = {
 			trigger = {
 				is_silicoid_species = yes
-				has_trait = trait_electroid
+				has_electroid_energy_upkeep = yes
 			}
 			energy = @living_standard_energy_normal_electroid
+		}
+		upkeep = {
+			trigger = { is_silicoid_species = yes }
 			food = @living_standard_food_normal_silicoid
 		}
 
+		# Robotic Upkeep
 		upkeep = {
-			trigger = {
-				is_robotic_species = yes
-				is_unemployed = no
-			}
+			trigger = { is_robotic_species = yes }
 			energy = @living_standard_energy_normal
 		}
-		upkeep = {
-			trigger = {
-				is_robotic_species = yes
-				is_unemployed = yes
-			}
-			energy = @living_standard_energy_unemployed
-		}
 
+		# Resource Production
 		produces = {
-			trigger = {
-				is_lithoid = yes
-				has_trait = trait_lithoid_scintillating
-			}
+			trigger = { has_trait = trait_lithoid_scintillating }
 			rare_crystals = @lithoid_trait_resource_production
 		}
-
 		produces = {
-			trigger = {
-				is_lithoid = yes
-				has_trait = trait_lithoid_gaseous_byproducts
-			}
+			trigger = { has_trait = trait_lithoid_gaseous_byproducts }
 			exotic_gases = @lithoid_trait_resource_production
 		}
-
 		produces = {
-			trigger = {
-				is_lithoid = yes
-				has_trait = trait_lithoid_volatile_excretions
-			}
+			trigger = { has_trait = trait_lithoid_volatile_excretions }
 			volatile_motes = @lithoid_trait_resource_production
 		}
 	}
