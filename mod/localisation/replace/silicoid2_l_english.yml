@@ -6,7 +6,7 @@
  trait_melting: "Molten"
  trait_electroid: "Electroid"
  trait_electroid_desc: "§LMembers of this species, rather than requiring a mineral intake like most silicoids, have evolved to naturally attract and consume electricity to sustain their bodies in addition to regular food.§!\n"
- TRAIT_ELECTROID_EFFECT: "Pops consume £energy£ §Y$energy$§! instead of £minerals£ §Y$minerals$§!.\n"
+ TRAIT_ELECTROID_EFFECT: "Pops consume £energy£ §Y$energy$§! instead of £minerals£ §Y$minerals$§!.\nPops living on §YTomb Worlds§! have no £energy£ §Y$energy$§! Upkeep.\n"
  EMPIRE_DESIGN_silicoid_empire1: "Taclariotan Influence"
  EMPIRE_DESIGN_silicoid_empire1_desc: "The ephemeral inhabitants of Taclaarat have a long history of tribalistic warfare and technological competition. Taclariota are big and lean silicoids with a glassy look and sharp features. They are cautious and untrusting around other species, often perceived as rough and imperfect when compared to their crystalline structure.\n\nDespite their tribalistic competition, individual Taclariota understand perfectly the need for cooperation and are happy to obey their superiors, working together against their enemies.\n\nHaving unified only in the last century, the Taclariotan species has undergone a series of political and racial purges via brutal terraforming of their own continental masses. They have finally found peace under the iron grip of a technocratic royal line."
  EMPIRE_DESIGN_silicoid_empire2: "Mandate of Druerd"

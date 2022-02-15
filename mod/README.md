@@ -92,6 +92,7 @@ This mod overwrites the corresponding species class added by "Silfae's city sets
 * 3.0.1 No longer ignore portrait duplication for the pre-scripted empire
 * 4.0.0 Update for compatibility with Stellaris version 3.3 "Libra"
     * Technocracy no longer requires Fanatic materialist, so the Taclariotan influence is once again has its original ethos: authoritarian, xenophobic, materialist
+    * Electroid has free energy upkeep on Tomb Worlds, similar to Radiotrophic, but no other bonuses
     * Adjusted species traits for 3.3 "Libra" changes
 
 ## Source Code
