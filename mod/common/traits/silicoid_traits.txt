@@ -55,6 +55,8 @@ trait_melting = {
 		pc_habitat
 	}
 	species_potential_add = {
+		is_scope_valid = yes
+		is_scope_type = species
 		NOR = {
 			ideal_planet_class = pc_alpine
 			ideal_planet_class = pc_arctic
@@ -94,6 +96,8 @@ trait_cold_pulse = {
 		pc_habitat
 	}
 	species_potential_add = {
+		is_scope_valid = yes
+		is_scope_type = species
 		NOR = {
 			ideal_planet_class = pc_arid
 			ideal_planet_class = pc_desert
