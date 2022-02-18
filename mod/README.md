@@ -66,7 +66,7 @@ This mod should be added before the game has started.  If you remove it from a g
 This mod overwrites the corresponding species class added by "Silfae's city sets updated" so that it will not be available for use.  Instead, the original species class from Silfae (with localisation) is used.  Expect to see one line in error.log like this:
 
 ```
-[00:50:44][game_singleobjectdatabase.h:147]: Object with key: Silfae-Silicoid already exists
+[23:01:47][game_singleobjectdatabase.h:147]: Object with key: Silfae-Silicoid already exists, using the one at  file: common/species_classes/zz_silfae_cities_silicoid_exclude.txt line: 2
 ```
 
 ## Changelog
