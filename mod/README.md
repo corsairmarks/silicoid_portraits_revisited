@@ -94,6 +94,7 @@ This mod overwrites the corresponding species class added by "Silfae's city sets
     * Technocracy no longer requires Fanatic materialist, so the Taclariotan influence is once again has its original ethos: authoritarian, xenophobic, materialist
     * Electroid has free energy upkeep on Tomb Worlds, similar to Radiotrophic, but no other bonuses
     * Adjusted species traits for 3.3 "Libra" changes
+* 4.0.1 Update Cold Pulse and Molten traits to use the right triggers to activate their effects
 
 ## Source Code
 
