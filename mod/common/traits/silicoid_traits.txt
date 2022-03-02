@@ -64,7 +64,10 @@ trait_melting = {
 		}
 	}
 	triggered_planet_growth_habitability_modifier = {
-		potential = { is_dry = yes }
+		potential = {
+			exists = planet
+			planet = { is_dry = yes }
+		}
 		pop_environment_tolerance = 0.5
 	}
 	species_class = { SLCOD }
@@ -105,7 +108,10 @@ trait_cold_pulse = {
 		}
 	}
 	triggered_planet_growth_habitability_modifier = {
-		potential = { is_cold = yes }
+		potential = {
+			exists = planet
+			planet = { is_cold = yes }
+		}
 		pop_environment_tolerance = 0.5
 	}
 	species_class = { SLCOD }
