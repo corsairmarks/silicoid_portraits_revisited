@@ -1,47 +1,47 @@
 SLCOD = {
 	silicoid_00 = {
-		name = "Silicoid"
-		plural = "Silicoids"
-		home_planet = "Karat"
-		home_system = "Batkyn"
+		name = SPEC_SLCOD_silicoid_00
+		plural = SPEC_SLCOD_silicoid_00_plural
+		home_planet = SPEC_SLCOD_silicoid_00_planet
+		home_system = SPEC_SLCOD_silicoid_00_system
 		name_list = SLCOD1
 	}
 	silicoid_01 = {
-		name = "Taclariot"
-		plural = "Taclariota"
-		home_planet = "Taclaarat"
-		home_system = "Batkyn"
+		name = SPEC_SLCOD_silicoid_01
+		plural = SPEC_SLCOD_silicoid_01_plural
+		home_planet = SPEC_SLCOD_silicoid_01_planet
+		home_system = SPEC_SLCOD_silicoid_01_system
 		name_list = SLCOD1
 	}
 	silicoid_02 = {
-		name = "Gogrod"
-		plural = "Gogrodes"
-		home_planet = "Druerd"
-		home_system = "Dim One"
+		name = SPEC_SLCOD_silicoid_02
+		plural = SPEC_SLCOD_silicoid_02_plural
+		home_planet = SPEC_SLCOD_silicoid_02_planet
+		home_system = SPEC_SLCOD_silicoid_02_system
 		name_list = FUN2
 	}
 }
 
 SLCODALT = {
 	silicoid_00 = {
-		name = "Silicoid"
-		plural = "Silicoids"
-		home_planet = "Karat"
-		home_system = "Batkyn"
+		name = SPEC_SLCOD_silicoid_00
+		plural = SPEC_SLCOD_silicoid_00_plural
+		home_planet = SPEC_SLCOD_silicoid_00_planet
+		home_system = SPEC_SLCOD_silicoid_00_system
 		name_list = SLCOD1
 	}
 	silicoid_01 = {
-		name = "Taclariot"
-		plural = "Taclariota"
-		home_planet = "Taclaarat"
-		home_system = "Batkyn"
+		name = SPEC_SLCOD_silicoid_01
+		plural = SPEC_SLCOD_silicoid_01_plural
+		home_planet = SPEC_SLCOD_silicoid_01_planet
+		home_system = SPEC_SLCOD_silicoid_01_system
 		name_list = SLCOD1
 	}
 	silicoid_02 = {
-		name = "Gogrod"
-		plural = "Gogrodes"
-		home_planet = "Druerd"
-		home_system = "Dim One"
+		name = SPEC_SLCOD_silicoid_02
+		plural = SPEC_SLCOD_silicoid_02_plural
+		home_planet = SPEC_SLCOD_silicoid_02_planet
+		home_system = SPEC_SLCOD_silicoid_02_system
 		name_list = FUN2
 	}
 }
