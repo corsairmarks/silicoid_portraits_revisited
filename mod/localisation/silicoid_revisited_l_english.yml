@@ -2,6 +2,7 @@
  mod_planet_pops_energy_upkeep_mult: "$POP$ $energy$ $UPKEEP$"
  mod_planet_pops_minerals_upkeep_mult: "$POP$ $minerals$ $UPKEEP$"
  mod_planet_pops_food_upkeep_mult: "$POP$ $food$ $UPKEEP$"
+ civic_tooltip_terraformers_effects: "Begin with the §Y$tech_terrestrial_sculpting$§! technology researched."
  SLCOD_organ_plural: "dust"
  SLCOD_ear: "$LITHOID_ear$"
  SLCOD_ear_plural: "$LITHOID_ear_plural$"
