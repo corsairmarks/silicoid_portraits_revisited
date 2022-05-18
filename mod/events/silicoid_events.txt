@@ -69,8 +69,13 @@ planet_event = {
 					variable = num_district_farming
 				}
 			}
-			while = {
-				count = num_district_farming
+			if = {
+				limit = {
+					check_variable = {
+						which = num_district_farming
+						value < 1
+					}
+				}
 				sr_remove_planet_appropriate_mining_district = yes
 				sr_add_planet_appropriate_farming_district = yes
 			}
