@@ -3,6 +3,7 @@
 # the includes all classes of archetype LITHOIDs.
 # scope = anything with species (country/species/pop)
 is_lithoid_species = {
+	optimize_memory
 	species = {
 		is_archetype = LITHOID
 		has_trait = trait_lithoid
@@ -14,6 +15,7 @@ is_lithoid_species = {
 # the includes all classes of archetype LITHOIDs.
 # scope = anything with species (country/species/pop)
 is_silicoid_species = {
+	optimize_memory
 	species = {
 		is_archetype = LITHOID
 		has_trait = trait_silicoid
@@ -22,6 +24,7 @@ is_silicoid_species = {
 
 # this = species
 has_electroid_energy_upkeep = {
+	optimize_memory
 	has_trait = trait_electroid
 	NOT = { planet = { is_planet_class = pc_nuked } }
 }
