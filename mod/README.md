@@ -95,6 +95,11 @@ This mod overwrites the corresponding species class added by "Silfae's city sets
     * Electroid has free energy upkeep on Tomb Worlds, similar to Radiotrophic, but no other bonuses
     * Adjusted species traits for 3.3 "Libra" changes
 * 4.0.1 Update Cold Pulse and Molten traits to use the right triggers to activate their effects
+* 5.0.0 Update for Stellaris version 3.4 "Cepheus"
+    * Add an effect description to Civic: Terraformers
+    * Update Pop strata (Pop categories) with underlying game changes
+    * Add/adjust slave cost for the custom traits
+    * All static text moved to localisation (name lists, species random names, prescripted empire)
 
 ## Source Code
 
