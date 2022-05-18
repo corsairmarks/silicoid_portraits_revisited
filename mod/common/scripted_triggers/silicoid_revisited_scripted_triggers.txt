@@ -28,3 +28,32 @@ has_electroid_energy_upkeep = {
 	has_trait = trait_electroid
 	NOT = { planet = { is_planet_class = pc_nuked } }
 }
+
+# this = planet
+sr_planet_uses_district_farming_uncapped = {
+	optimize_memory
+	OR = {
+		uses_district_set = hive_world
+		uses_district_set = shattered_ring_world
+		AND = {
+			is_planet_class = pc_ocean
+			exists = owner
+			owner = { is_anglers_empire = yes }
+		}
+	}
+}
+
+# this = planet
+sr_planet_uses_district_mining_uncapped = {
+	optimize_memory
+	OR = {
+		uses_district_set = hive_world
+		uses_district_set = machine_world
+		uses_district_set = shattered_ring_world
+		AND = {
+			uses_district_set = standard
+			exists = owner
+			owner = { is_subterranean_empire = yes }
+		}
+	}
+}

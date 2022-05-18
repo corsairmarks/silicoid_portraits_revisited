@@ -40,33 +40,6 @@ planet_event = {
 	}
 	immediate = {
 		if = {
-			limit = {
-				OR = {
-					is_planet_class = pc_hive
-					AND = {
-						is_planet_class = pc_ocean
-						owner = { is_anglers_empire = yes }
-					}
-				}
-			}
-			while = {
-				limit = {
-					num_districts = {
-						type = district_farming_uncapped
-						value < 1
-					}
-				}
-				add_district = district_farming_uncapped
-				if = {
-					limit = { is_planet_class = pc_hive }
-					remove_district = district_mining_uncapped
-				}
-				else = {
-					remove_district = district_mining
-				}
-			}
-		}
-		else_if = {
 			limit = { owner = { has_origin = origin_void_dwellers } }
 			solar_system = {
 				random_system_planet = {
@@ -76,18 +49,32 @@ planet_event = {
 				}
 			}
 		}
-		else_if = {
-			limit = { habitable_planet = yes }
-			while = {
-				limit = {
-					num_districts = {
+		else = {
+			if = {
+				limit = { sr_planet_uses_district_farming_uncapped = no }
+				export_trigger_value_to_variable = {
+					trigger = num_districts
+					parameters = {
 						type = district_farming
-						value < 1
 					}
+					variable = num_district_farming
 				}
-				add_district = district_farming
-				remove_district = district_mining
 			}
+			else = {
+				export_trigger_value_to_variable = {
+					trigger = num_districts
+					parameters = {
+						type = district_farming_uncapped
+					}
+					variable = num_district_farming
+				}
+			}
+			while = {
+				count = num_district_farming
+				sr_remove_planet_appropriate_mining_district = yes
+				sr_add_planet_appropriate_farming_district = yes
+			}
+			clear_variable = num_district_farming
 		}
 		owner = {
 			if = {
