@@ -100,6 +100,7 @@ This mod overwrites the corresponding species class added by "Silfae's city sets
     * Update Pop strata (Pop categories) with underlying game changes
     * Add/adjust slave cost for the custom traits
     * All static text moved to localisation (name lists, species random names, prescripted empire)
+* 5.0.1 Fix incorrectly formatted string for sequential fleet names in the Silicoid name list
 
 ## Source Code
 
