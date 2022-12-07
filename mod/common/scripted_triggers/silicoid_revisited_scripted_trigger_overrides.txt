@@ -2,7 +2,9 @@
 has_mineral_upkeep = {
 	species = {
 		is_archetype = LITHOID
-		NOT = { has_trait = trait_silicoid }
+		NOR = {
+			has_trait = trait_voidling
+			has_trait = trait_silicoid
+		}
 	}
-	NOT = { has_trait = trait_voidling }
 }
