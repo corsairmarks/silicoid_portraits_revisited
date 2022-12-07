@@ -1,24 +1,21 @@
-# Is the scope's species the LITHOID archetype with trait_lithoid?
-# Use when you need to distinguish Lithoids from Silicoids, otherwise use is_lithoid
-# the includes all classes of archetype LITHOIDs.
 # scope = anything with species (country/species/pop)
-is_lithoid_species = {
+has_silicoid_food_upkeep = {
 	optimize_memory
 	species = {
-		is_archetype = LITHOID
-		has_trait = trait_lithoid
+		has_trait = trait_silicoid
+		NOT = { has_trait = trait_voidling }
 	}
 }
 
-# Is the scope's species the LITHOID archetype with trait_silicoid?
-# Use when you need to distinguish Silicoids from Lithoids, otherwise use is_lithoid
-# the includes all classes of archetype LITHOIDs.
 # scope = anything with species (country/species/pop)
-is_silicoid_species = {
+has_silicoid_mineral_upkeep = {
 	optimize_memory
 	species = {
-		is_archetype = LITHOID
 		has_trait = trait_silicoid
+		NOR = {
+			has_trait = trait_voidling
+			has_trait = trait_electroid
+		}
 	}
 }
 
@@ -26,7 +23,10 @@ is_silicoid_species = {
 has_electroid_energy_upkeep = {
 	optimize_memory
 	has_trait = trait_electroid
-	NOT = { planet = { is_planet_class = pc_nuked } }
+	NOR = {
+		has_trait = trait_voidling
+		planet = { is_planet_class = pc_nuked }
+	}
 }
 
 # this = planet

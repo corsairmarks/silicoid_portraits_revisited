@@ -1,0 +1,8 @@
+# Modified: Silicoids have custom upkeep instead of standard lithoid upkeep
+has_mineral_upkeep = {
+	species = {
+		is_archetype = LITHOID
+		NOT = { has_trait = trait_silicoid }
+	}
+	NOT = { has_trait = trait_voidling }
+}
