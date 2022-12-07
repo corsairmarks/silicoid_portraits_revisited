@@ -47,7 +47,7 @@ silicoid_empire1 = {
 		name = PRESCRIPTED_ruler_name_silicoid_empire1
 		portrait = silicoid_02
 		texture = 5
-		hair = 0
+		attachment = 0
 		clothes = 0
 		leader_class = ruler
 	}
@@ -112,7 +112,7 @@ silicoid_empire2 = {
 		name = PRESCRIPTED_ruler_name_silicoid_empire2
 		portrait = silicoid_b_01
 		texture = 1
-		hair = 0
+		attachment = 0
 		clothes = 0
 		leader_class = ruler
 	}
