@@ -1,3 +1,5 @@
+**_Important Update for Stellaris 3.6 "Orion":_** This mod is now more compatible, thanks to improved trigger usage for Pop upkeep.  This mod no longer overrides any Pop strata.  Thanks Paradox!
+
 # Overview
 
 Do you dream of glassy silicoids?  Or perhaps you'd like some rock-people with sexual dimorphism?  Silfae's "Animated Silicoid Portraits" mod delivers several different options for portraits and extra gameplay features.  Do you wish the gameplay elements were up-to-date so that you can play the Taclariotan Influence or Mandate of Druerd as designed?  Then this mod is for you!
@@ -6,7 +8,7 @@ There are lots of other mods which contain these portraits, so why should you ch
 
 # Changes
 
-All gameplay features from the original mod are upgraded to be fully compatible with Stellaris 3.3 "Libra," the latest version when this was written.  Updates include:
+All gameplay features from the original mod are upgraded to be fully compatible with Stellaris 3.6 "Orion," the latest version when this was written.  Updates include:
 
 * Update the included Contingency-swap shipset `silicoid_01`
     * Ensure the ship entities are blank for ship sections and instead use the ship hull as the attachment point for the Contingency graphics
@@ -20,10 +22,10 @@ All gameplay features from the original mod are upgraded to be fully compatible 
     * They remain a separate Silicoid (`SLCOD`) species class
     * Can use many common built-in traits (although some are specifically omitted by making `trait_silicoid` incompatible with them)
     * Molten cannot be taken by species starting on cold worlds, Cold Pulse cannot be taken by species starting on warm worlds - this restriction applies to any origin that allows you can select your species' ideal climate
-    * Can use (most) Lithoid traits and unique silicoid traits
+    * Can use (most) lithoid traits and unique silicoid traits
     * Lithoids (species class) cannot take any silicoid traits
     * Will work with built-in ascension paths and other gameplay features that require `BIOLOGICAL` or `LITHOID` archetypes
-* Override `pop_categories` in order to balance silicoid Pop upkeep (0.25 food, 0.75 minerals in most situations, 0.25 food and 0.75 energy for Electroids)
+* Override `inline_scripts\pop_categories\regular_upkeep.txt` in order to balance silicoid Pop upkeep (0.25 food, 0.75 minerals in most situations, 0.25 food and 0.75 energy for Electroids)
 * Update most silicoid traits
     * Update "Sparkly" and "Grotesque" to reduce or increase amenities usage (old effects no longer available)
     * Silicoid and Electroid traits (and Idealized/Demanding Structure) adjusted to work on energy/minerals/food instead of consumer goods
@@ -38,17 +40,11 @@ All gameplay features from the original mod are upgraded to be fully compatible 
 
 ## Compatibility
 
-This mod has more compatibility concerns than most of my other Silfae's Revisited series.  Because to overwrites `pop_categories` (Pop strata) to adjust silicoid Pop resource upkeep, that makes this mod incompatible with any mods that also adjust Pop strata.  It is explicitly incompatible with [Animated Holosphere Rising Portraits: Revisited](https://steamcommunity.com/sharedfiles/filedetails/?id=2592592503) unless you use the [compatibility patch](https://steamcommunity.com/sharedfiles/filedetails/?id=2596642632).  It's also likely to break any time Stellaris makes changes to the underlying Pop strata.  These files are completely overwritten: 
-
-* `common/pop_categories/00_social_classes.txt` - regular empire pop strata
-* `common/pop_categories/01_gestalt_drones.txt` - gestalt empire pop strata
-* `common/pop_categories/02_other_categories.txt` - precursors, criminals/deviants, and miscellaneous pop strata
-
 This mod is also incompatible with mods that add the same species classes, traits, shipset (by name - other reuses of the Contingency will be compatible), or art assets (portraits and meshes).
 
 The Launcher will tell you that some mods are outdated - that is because the dependencies are both out of date with the game's version number.  This mod overwrites and replaces all incompatible code so that the portrait mod will function as originally designed.  You can safely ignore the out-of-date warning for the dependency mods.
 
-Built for Stellaris version 3.3 "Libra."  Not compatible with achievements.  The shipset does not have NSC classes.
+Built for Stellaris version 3.6 "Orion."  Not compatible with achievements.  The shipset does not have NSC classes.
 
 ### Dependencies
 
@@ -66,7 +62,7 @@ This mod should be added before the game has started.  If you remove it from a g
 This mod overwrites the corresponding species class added by "Silfae's city sets updated" so that it will not be available for use.  Instead, the original species class from Silfae (with localisation) is used.  Expect to see one line in error.log like this:
 
 ```
-[23:01:47][game_singleobjectdatabase.h:147]: Object with key: Silfae-Silicoid already exists, using the one at  file: common/species_classes/zz_silfae_cities_silicoid_exclude.txt line: 2
+[23:01:47][game_singleobjectdatabase.h:165]: Object with key: Silfae-Silicoid already exists, using the one at  file: common/species_classes/zz_silfae_cities_silicoid_exclude.txt line: 2
 ```
 
 ## Changelog
@@ -101,6 +97,11 @@ This mod overwrites the corresponding species class added by "Silfae's city sets
     * Add/adjust slave cost for the custom traits
     * All static text moved to localisation (name lists, species random names, prescripted empire)
 * 5.0.1 Fix incorrectly formatted string for sequential fleet names in the Silicoid name list
+* 6.0.0 Update for Stellaris version 3.6 "Orion" (and changes from version 3.5 "Fornax")
+    * Minor namelist updates
+    * Update `hair` to `attachment`
+    * Remove Pop category (social strata) overrides - no longer necessary
+    * Update custom traits to follow new gene-modding rules and also be weighted for assembly chance
 
 ## Source Code
 
