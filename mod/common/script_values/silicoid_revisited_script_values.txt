@@ -1,0 +1,27 @@
+counter_trait_sparkly = {
+	complex_trigger_modifier = {
+		trigger = count_owned_pop
+		parameters = {
+			limit = {
+				NOT = { has_trait = trait_sparkly }
+				pop_has_happiness = yes
+			}
+		}
+		mode = add
+	}
+	max = 20
+}
+
+counter_trait_grotesque = {
+	complex_trigger_modifier = {
+		trigger = count_owned_pop
+		parameters = {
+			limit = {
+				NOT = { has_trait = trait_grotesque }
+				pop_has_happiness = yes
+			}
+		}
+		mode = add
+	}
+	max = 20
+}

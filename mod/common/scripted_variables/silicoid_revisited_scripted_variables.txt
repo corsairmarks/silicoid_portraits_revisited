@@ -4,3 +4,6 @@
 @living_standard_minerals_normal_silicoid = 0.75
 @living_standard_energy_high_electroid = 1.5
 @living_standard_energy_normal_electroid = 0.75
+
+@trait_sparkly_happiness_bonus = 0.03
+@trait_grotesque_happiness_penalty = -0.05

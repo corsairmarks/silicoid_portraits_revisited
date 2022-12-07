@@ -1,0 +1,50 @@
+pop_non_sparkly_happiness = {
+	icon = mod_pop_happiness
+	good = yes
+	category = pop
+}
+
+pop_non_grotesque_happiness = {
+	icon = mod_pop_happiness
+	good = no
+	category = pop
+}
+
+# for social classes:
+# triggered_pop_modifier = {
+# 	potential = {
+# 		NOT = { has_trait = trait_sparkly }
+# 	}
+# 	key = trait_sparkly
+# 	pop_happiness = 1
+# 	mult = modifier:pop_non_sparkly_happiness
+# }
+
+# triggered_planet_modifier = {
+# 	potential = {
+# 		has_trait = trait_sparkly
+# 	}
+# 	key = trait_sparkly
+# 	pop_non_sparkly_happiness = @trait_sparkly_happiness_bonus
+# }
+
+# triggered_pop_modifier = {
+# 	potential = {
+# 		NOT = { has_trait = trait_grotesque }
+# 	}
+# 	key = trait_grotesque
+# 	pop_happiness = 1
+# 	mult = modifier:pop_non_grotesque_happiness
+# }
+
+# triggered_planet_modifier = {
+# 	potential = {
+# 		has_trait = trait_grotesque
+# 	}
+# 	key = trait_grotesque
+# 	pop_non_grotesque_happiness = @trait_grotesque_happiness_penalty
+# }
+
+# for loc
+#  mod_pop_non_sparkly_happiness: "$trait_sparkly$ Neighbor"
+#  mod_pop_non_grotesque_happiness: "$trait_grotesque$ Neighbor"
