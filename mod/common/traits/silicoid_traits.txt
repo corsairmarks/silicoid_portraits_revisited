@@ -34,6 +34,12 @@ trait_silicoid = {
 
 trait_melting = {
 	cost = 1
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
@@ -74,10 +80,22 @@ trait_melting = {
 		energy = 500
 	}
 	species_class = { SLCOD }
+	assembly_score = {
+		modifier = {
+			add = 0.5
+			from = { is_dry = yes }
+		}
+	}
 }
 
 trait_cold_pulse = {
 	cost = 1
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
@@ -118,15 +136,27 @@ trait_cold_pulse = {
 		energy = 500
 	}
 	species_class = { SLCOD }
+	assembly_score = {
+		modifier = {
+			add = 0.5
+			from = { is_cold = yes }
+		}
+	}
 }
 
 trait_sparkly = {
 	cost = 1
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
 		trait_grotesque
-		trait_decadent
+		trait_repugnant
 	}
 	modifier = {
 		pop_amenities_usage_add = -0.2
@@ -139,11 +169,14 @@ trait_sparkly = {
 
 trait_grotesque = {
 	cost = -1
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+	}
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
 		trait_sparkly
-		trait_decadent
+		trait_charismatic
 	}
 	modifier = {
 		pop_amenities_usage_add = 0.2
@@ -159,6 +192,12 @@ trait_grotesque = {
 
 trait_sharp = {
 	cost = 1
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	modifier = {
@@ -168,10 +207,24 @@ trait_sharp = {
 		energy = 1500
 	}
 	species_class = { SLCOD }
+	assembly_score = {
+		modifier = {
+			add = 1.5
+			from = {
+				has_fortress_designation = yes
+			}
+		}
+	}
 }
 
 trait_eternal = {
 	cost = 2
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = { trait_degrading }
@@ -186,6 +239,9 @@ trait_eternal = {
 
 trait_degrading = {
 	cost = -1
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+	}
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = { trait_eternal }
@@ -203,6 +259,9 @@ trait_degrading = {
 
 trait_brittle = {
 	cost = -2
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+	}
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
@@ -221,10 +280,24 @@ trait_brittle = {
 		energy = -800
 	}
 	species_class = { SLCOD }
+	assembly_score = {
+		modifier = {
+			subtract = 1.5
+			from = {
+				has_fortress_designation = yes
+			}
+		}
+	}
 }
 
 trait_solid_shape = {
 	cost = 2
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = { trait_brittle }
@@ -236,10 +309,21 @@ trait_solid_shape = {
 		energy = 1000
 	}
 	species_class = { SLCOD }
+	assembly_score = {
+		modifier = {
+			add = 1.5
+			from = {
+				has_fortress_designation = yes
+			}
+		}
+	}
 }
 
 trait_axiomatic_synapses = {
 	cost = -2
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+	}
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
@@ -268,10 +352,26 @@ trait_axiomatic_synapses = {
 		energy = -200
 	}
 	species_class = { SLCOD }
+	assembly_score = {
+		modifier = {
+			subtract = 1
+			from = { has_research_designation = yes }
+		}
+		modifier = {
+			subtract = 1
+			from = { has_building = building_order_keep }
+		}
+	}
 }
 
 trait_fluid_synapses = {
 	cost = 2
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
@@ -298,10 +398,23 @@ trait_fluid_synapses = {
 		energy = 500
 	}
 	species_class = { SLCOD }
+	assembly_score = {
+		modifier = {
+			add = 1
+			from = { has_research_designation = yes }
+		}
+		modifier = {
+			add = 1
+			from = { has_building = building_order_keep }
+		}
+	}
 }
 
 trait_demanding_structure = {
 	cost = -1
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+	}
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = { trait_idealized_structure }
@@ -321,6 +434,12 @@ trait_demanding_structure = {
 
 trait_idealized_structure = {
 	cost = 2
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = { trait_demanding_structure }
@@ -337,10 +456,10 @@ trait_idealized_structure = {
 
 trait_electroid = {
 	cost = -1
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+	}
 	potential_crossbreeding_chance = 1.0
-	species_potential_add = { always = no }
-	species_possible_remove = { always = no }
-	species_possible_merge_add = { always = no }
 	allowed_archetypes = { LITHOID }
 	custom_tooltip = TRAIT_ELECTROID_EFFECT
 	slave_cost = {
@@ -351,6 +470,9 @@ trait_electroid = {
 
 trait_rooted = {
 	cost = -1
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+	}
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = { trait_roaming }
@@ -368,6 +490,12 @@ trait_rooted = {
 
 trait_roaming = {
 	cost = 1
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = { trait_rooted }
@@ -382,6 +510,12 @@ trait_roaming = {
 
 trait_compact = {
 	cost = 2
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
 	opposites = {
@@ -399,4 +533,14 @@ trait_compact = {
 		energy = 1000
 	}
 	species_class = { SLCOD }
+	assembly_score = {
+		modifier = {
+			add = 2
+			from = { has_unity_designation = yes }
+		}
+		modifier = {
+			add = 2
+			from = { has_building = building_order_keep }
+		}
+	}
 }
