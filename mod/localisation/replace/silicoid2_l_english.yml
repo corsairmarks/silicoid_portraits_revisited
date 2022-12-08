@@ -2,7 +2,7 @@
  SLCOD_compliment_plural_01: "mountains"
  trait_silicoid: "Silicoid"
  trait_silicoid_desc: "§LSilicoids are a subtype of lithoids and require minerals to maintain their bodies, but also require organic compounds in the form of food. Unlike their lithoid relatives, silicoids tend to exhibit distinct genders, reproduce at a pace more similar to carbon-based life, and are more sensitive to changes in environment.§!\n"
- TRAIT_SILICOID_EFFECTS: "Pops consume mostly £minerals£ §Y$minerals$§! and a small amount of £food£ §Y$food$§!\n\n$MOD_POP_GROWTH_SPEED$: §R-10%§!\n$MOD_POP_ASSEMBLY_SPEED$: §R-10%§!\n$MOD_POP_ENVIRONMENT_TOLERANCE$: §G+20%§!\n$MOD_ARMY_HEALTH$: §G+25%§!\n$MOD_LEADER_AGE$: §G+10§!"
+ TRAIT_SILICOID_EFFECTS: "Pops consume mostly £minerals£ §Y$minerals$§! and a small amount of £food£ §Y$food$§!\n\n$MOD_POP_GROWTH_SPEED$: §R-10%§!\n$MOD_PLANET_POP_ASSEMBLY_ORGANIC_MULT$: §R-10%§!\n$MOD_POP_ENVIRONMENT_TOLERANCE$: §G+20%§!\n$MOD_ARMY_HEALTH$: §G+25%§!\n$MOD_LEADER_AGE$: §G+10§!"
  trait_melting: "Molten"
  trait_electroid: "Electroid"
  trait_electroid_desc: "§LMembers of this species, rather than requiring a mineral intake like most silicoids, have evolved to naturally attract and consume electricity to sustain their bodies in addition to regular food.§!\n"

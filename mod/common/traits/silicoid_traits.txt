@@ -21,7 +21,7 @@ trait_silicoid = {
 	# if these values change, be sure to alter the custom tooltip
 	modifier = {
 		pop_growth_speed = -0.1
-		pop_assembly_speed = -0.1
+		planet_pop_assembly_organic_mult = -0.1
 		pop_environment_tolerance = 0.2
 		army_health = 0.25
 		leader_age = 10
