@@ -3,6 +3,8 @@
  mod_planet_pops_minerals_upkeep_mult: "$POP$ $minerals$ $UPKEEP$"
  mod_planet_pops_food_upkeep_mult: "$POP$ $food$ $UPKEEP$"
  civic_tooltip_terraformers_effects: "Begin with the §Y$tech_terrestrial_sculpting$§! technology researched."
+ TRAIT_MELTING_EFFECTS: "$gaiaseeders_dry$ $HABITABILITY$: §G+50%§!"
+ TRAIT_COLD_PULSE_EFFECTS: "$gaiaseeders_cold$ $HABITABILITY$: §G+50%§!"
  SLCOD_organ_plural: "dust"
  SLCOD_ear: "$LITHOID_ear$"
  SLCOD_ear_plural: "$LITHOID_ear_plural$"
