@@ -1,5 +1,3 @@
-**_Important Update for Stellaris 3.6 "Orion":_** This mod is now more compatible, thanks to improved trigger usage for Pop upkeep.  This mod no longer overrides any Pop strata.  Thanks Paradox!
-
 # Overview
 
 Do you dream of glassy silicoids?  Or perhaps you'd like some rock-people with sexual dimorphism?  Silfae's "Animated Silicoid Portraits" mod delivers several different options for portraits and extra gameplay features.  Do you wish the gameplay elements were up-to-date so that you can play the Taclariotan Influence or Mandate of Druerd as designed?  Then this mod is for you!
@@ -8,7 +6,7 @@ There are lots of other mods which contain these portraits, so why should you ch
 
 # Changes
 
-All gameplay features from the original mod are upgraded to be fully compatible with Stellaris 3.6 "Orion," the latest version when this was written.  Updates include:
+All gameplay features from the original mod are upgraded to be fully compatible with Stellaris 3.7 "Canis Minor," the latest version when this was written.  Updates include:
 
 * Update the included Contingency-swap shipset `silicoid_01`
     * Ensure the ship entities are blank for ship sections and instead use the ship hull as the attachment point for the Contingency graphics
@@ -44,7 +42,7 @@ This mod is also incompatible with mods that add the same species classes, trait
 
 The Launcher will tell you that some mods are outdated - that is because the dependencies are both out of date with the game's version number.  This mod overwrites and replaces all incompatible code so that the portrait mod will function as originally designed.  You can safely ignore the out-of-date warning for the dependency mods.
 
-Built for Stellaris version 3.6 "Orion."  Not compatible with achievements.  The shipset does not have NSC classes.
+Built for Stellaris version 3.7 "Canis Minor."  Not compatible with achievements.  The shipset does not have NSC classes.
 
 ### Dependencies
 
@@ -103,6 +101,11 @@ This mod overwrites the corresponding species class added by "Silfae's city sets
     * Remove Pop category (social strata) overrides - no longer necessary
     * Override the inline script for Pop regular upkeep, in order to add silicoid upkeep
     * Update custom traits to follow new gene-modding rules and also be weighted for assembly chance
+* 7.0.0 Update for Stellaris version 3.7 "Canis Minor"
+    * Improve compatibility with Photo/Radiotrophic
+    * Improve compatibility with Planetary Diversity - Molten/Cold Pulse traits don't offer full support, however
+    * Remove global flag
+    * Add compatibility trigger `has_silicoid_portraits_revisited_active`
 
 ## Source Code
 
