@@ -461,6 +461,11 @@ trait_electroid = {
 	}
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { LITHOID }
+	opposites = {
+		trait_advanced_phototrophic
+		trait_advanced_radiotrophic
+		trait_lithoid_radiotrophic
+	}
 	custom_tooltip = TRAIT_ELECTROID_EFFECT
 	slave_cost = {
 		energy = 1000

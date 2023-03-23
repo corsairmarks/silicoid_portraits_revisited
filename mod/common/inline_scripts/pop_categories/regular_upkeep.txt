@@ -33,31 +33,38 @@ upkeep = {
 
 # Energy Upkeep
 upkeep = {
-	trigger = {
-		has_phototrophic_energy_upkeep = yes
-	}
+	trigger = { has_phototrophic_energy_upkeep = yes }
 	energy = @living_standard_phototrophic_normal
 }
 
 upkeep = {
-	trigger = {
-		has_energy_upkeep = yes
-	}
+	trigger = { has_energy_upkeep = yes }
 	energy = @living_standard_energy_normal
 }
 
 # Added: Silicoid Upkeep
 upkeep = {
 	trigger = { has_silicoid_food_upkeep = yes }
-	food = @living_standard_food_normal_silicoid
+	food = @living_standard_food_silicoid
 }
 
 upkeep = {
-	trigger = { has_silicoid_mineral_upkeep = yes }
-	minerals = @living_standard_minerals_normal_silicoid
+	trigger = {
+		has_silicoid_mineral_upkeep = yes
+		is_phototrophic = no
+	}
+	minerals = @living_standard_minerals_silicoid
+}
+
+upkeep = {
+	trigger = {
+		has_silicoid_mineral_upkeep = yes
+		is_phototrophic = yes
+	}
+	minerals = @living_standard_food_silicoid
 }
 
 upkeep = {
 	trigger = { has_electroid_energy_upkeep = yes }
-	energy = @living_standard_energy_normal_electroid
+	energy = @living_standard_energy_electroid
 }

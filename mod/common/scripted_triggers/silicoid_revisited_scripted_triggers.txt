@@ -1,4 +1,4 @@
-# scope = anything with species (country/species/pop)
+# scope = pop
 has_silicoid_food_upkeep = {
 	optimize_memory
 	species = {
@@ -7,7 +7,7 @@ has_silicoid_food_upkeep = {
 	}
 }
 
-# scope = anything with species (country/species/pop)
+# scope = pop
 has_silicoid_mineral_upkeep = {
 	optimize_memory
 	species = {
@@ -19,13 +19,23 @@ has_silicoid_mineral_upkeep = {
 	}
 }
 
-# this = species
+# scope = pop
 has_electroid_energy_upkeep = {
 	optimize_memory
-	has_trait = trait_electroid
-	NOR = {
-		has_trait = trait_voidling
-		planet = { is_planet_class = pc_nuked }
+	species = {
+		has_trait = trait_electroid
+		NOR = {
+			has_trait = trait_voidling
+			prev = {
+				exists = planet
+				planet = {
+					OR = {
+						is_planet_class = pc_nuked
+						is_pd_nuked = yes
+					}
+				}
+			}
+		}
 	}
 }
 
