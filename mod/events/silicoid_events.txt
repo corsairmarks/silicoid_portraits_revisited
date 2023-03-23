@@ -25,8 +25,8 @@ country_event = {
 }
 
 # triggered by empire_init_capital_planet
-# ROOT = planet, capital
-# FROM = species, founder
+# root = planet, capital
+# from = species, founder
 planet_event = {
 	id = silicoids.3
 	hide_window = yes
@@ -94,18 +94,5 @@ planet_event = {
 				}
 			}
 		}
-	}
-}
-
-# flag mod as active
-event = {
-	id = silicoids.13
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		NOT = { has_global_flag = silicoid_revisited_installed }
-	}
-	immediate = {
-		set_global_flag = silicoid_revisited_installed
 	}
 }
