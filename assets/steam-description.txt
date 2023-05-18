@@ -1,53 +1,53 @@
 [h1]Overview[/h1]
-Do you dream of glassy silicoids?  Or perhaps you'd like some rock-people with sexual dimorphism?  Silfae's "Animated Silicoid Portraits" mod delivers several different options for portraits and extra gameplay features.  Do you wish the gameplay elements were up-to-date so that you can play the Taclariotan Influence or Mandate of Druerd as designed?  Then this mod is for you!
+Do you dream of glassy silicoids? Or perhaps you'd like some rock-people with sexual dimorphism? Silfae's "Animated Silicoid Portraits" mod delivers several different options for portraits and extra gameplay features. Do you wish the gameplay elements were up-to-date so that you can play the Taclariotan Influence or Mandate of Druerd as designed? Then this mod is for you!
 
-There are lots of other mods which contain these portraits, so why should you choose this one?  None of the others update the species traits, custom empires, or shipset, but this one does!  Please enjoy my translation of Silfae's custom empire into modern Stellaris.
+There are lots of other mods which contain these portraits, so why should you choose this one? None of the others update the species traits, custom empires, or shipset, but this one does! Please enjoy my translation of Silfae's custom empire into modern Stellaris.
 
 [h1]Changes[/h1]
-All gameplay features from the original mod are upgraded to be fully compatible with Stellaris 3.7 "Canis Minor," the latest version when this was written.  Updates include:
+All gameplay features from the original mod are upgraded to be fully compatible with Stellaris 3.8 "Gemini," the latest version when this was written. Updates include:
 [list]
 [*]Update the included Contingency-swap shipset [b]silicoid_01[/b]
-    [list]
-    [*]Ensure the ship entities are blank for ship sections and instead use the ship hull as the attachment point for the Contingency graphics
-    [*]Add missing entities and weapon locators
-    [*]Remove duplication
-    [*]Fallback for titans, juggernauts, and colossi is Contingency ([b]ai_01[/b]), which itself will fall back to mammalian
-    [/list]
+	[list]
+	[*]Ensure the ship entities are blank for ship sections and instead use the ship hull as the attachment point for the Contingency graphics
+	[*]Add missing entities and weapon locators
+	[*]Remove duplication
+	[*]Fallback for titans, juggernauts, and colossi is Contingency ([b]ai_01[/b]), which itself will fall back to mammalian
+	[/list]
 [*]Update silicoid civics to use modifiers available in modern Stellaris (also now available for Lithoids)
 [*]Allow silicoids as a secondary species and to spawn randomly (which requires at least one random namelist)
 [*]Add a silicoid namelist (sourced from a variety of random name generators)
 [*]Silicoids are now part of the LITHOID archetype (requires Lithoids)
-    [list]
-    [*]They remain a separate Silicoid ([b]SLCOD[/b]) species class
-    [*]Can use many common built-in traits (although some are specifically omitted by making [b]trait_silicoid[/b] incompatible with them)
-    [*]Molten cannot be taken by species starting on cold worlds, Cold Pulse cannot be taken by species starting on warm worlds - this restriction applies to any origin that allows you can select your species' ideal climate
-    [*]Can use (most) lithoid traits and unique silicoid traits
-    [*]Lithoids (species class) cannot take any silicoid traits
-    [*]Will work with built-in ascension paths and other gameplay features that require [b]BIOLOGICAL[/b] or [b]LITHOID[/b] archetypes
-    [/list]
+	[list]
+	[*]They remain a separate Silicoid ([b]SLCOD[/b]) species class
+	[*]Can use many common built-in traits (although some are specifically omitted by making [b]trait_silicoid[/b] incompatible with them)
+	[*]Molten cannot be taken by species starting on cold worlds, Cold Pulse cannot be taken by species starting on warm worlds - this restriction applies to any origin that allows you can select your species' ideal climate
+	[*]Can use (most) lithoid traits and unique silicoid traits
+	[*]Lithoids (species class) cannot take any silicoid traits
+	[*]Will work with built-in ascension paths and other gameplay features that require [b]BIOLOGICAL[/b] or [b]LITHOID[/b] archetypes
+	[/list]
 [*]Override [b]inline_scripts\pop_categories\regular_upkeep.txt[/b] in order to balance silicoid Pop upkeep (0.25 food, 0.75 minerals in most situations, 0.25 food and 0.75 energy for Electroids)
 [*]Update most silicoid traits
-    [list]
-    [*]Update "Sparkly" and "Grotesque" to reduce or increase amenities usage (old effects no longer available)
-    [*]Silicoid and Electroid traits (and Idealized/Demanding Structure) adjusted to work on energy/minerals/food instead of consumer goods
-    [*]The silicoid trait is now a middle ground between biological species and full lithoids - this is a design change from the original so silicoids aren't merely alpha-version lithoids
-    [*]Some trait effects tweaked with an eye towards vanilla balance
-    [/list]
+	[list]
+	[*]Update "Sparkly" and "Grotesque" to reduce or increase amenities usage (old effects no longer available)
+	[*]Silicoid and Electroid traits (and Idealized/Demanding Structure) adjusted to work on energy/minerals/food instead of consumer goods
+	[*]The silicoid trait is now a middle ground between biological species and full lithoids - this is a design change from the original so silicoids aren't merely alpha-version lithoids
+	[*]Some trait effects tweaked with an eye towards vanilla balance
+	[/list]
 [*]Adjust silicoid setup event to ensure at least 1 farming district on their homeworlds
 [*]Update prescripted empires
-    [list]
-    [*]Tacloriotans now also have Sparkly - they had an unused trait pick
-    [*]Taclariotans now use the new [b]SLCOD1[/b] namelist instead of [b]ART1[/b]
-    [/list]
-[*]Add a second Alt. Silicoid species class ([b]SLCODALT[/b] which cannot randomly spawn) that contains the same portraits, but uses the default lithoid features without any of the above changes
-[*]Silicoid portraits with sexual dimorphism support mono-gendered species (as of Stellaris 3.2)
+	[list]
+	[*]Tacloriotans now also have Sparkly - they had an unused trait pick
+	[*]Taclariotans now use the new [b]SLCOD1[/b] namelist instead of [b]ART1[/b]
+	[/list]
+[*]Also include the Silicoid portraits in the built-in Lithoid species class for use without the above gameplay changes, although they cannot randomly spawn (since Stellaris 3.8)
+[*]Silicoid portraits with sexual dimorphism support mono-gendered species (since Stellaris 3.2)
 [/list]
 [h2]Compatibility[/h2]
-This mod is also incompatible with mods that add the same species classes, traits, shipset (by name - other reuses of the Contingency will be compatible), or art assets (portraits and meshes).
+This mod is also incompatible with mods that add the same species class, traits, shipset (by name - other reuses of the Contingency will be compatible), or art assets (portraits and meshes).
 
-The Launcher will tell you that some mods are outdated - that is because the dependencies are both out of date with the game's version number.  This mod overwrites and replaces all incompatible code so that the portrait mod will function as originally designed.  You can safely ignore the out-of-date warning for the dependency mods.
+The Launcher will tell you that some mods are outdated - that is because the dependencies are both out of date with the game's version number. This mod overwrites and replaces all incompatible code so that the portrait mod will function as originally designed. You can safely ignore the out-of-date warning for the dependency mods.
 
-Built for Stellaris version 3.7 "Canis Minor."  Not compatible with achievements.  The shipset does not have NSC classes.
+Built for Stellaris version 3.8 "Gemini." Not compatible with achievements. The shipset does not have NSC classes.
 
 [h3]Dependencies[/h3]
 In order for this mod to function, you [b]must[/b] install these two mods and load them before this one:
@@ -56,12 +56,12 @@ In order for this mod to function, you [b]must[/b] install these two mods and lo
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2247427791]Silfae's city sets updated[/url] by Nozeminer
 [/list]
 [h3]When to Install[/h3]
-This mod should be added before the game has started.  If you remove it from a game in progress, your game may have graphical problems if any species was using the custom portraits or city graphics.
+This mod should be added before the game has started. If you remove it from a game in progress, your game may have graphical problems if any species was using the custom portraits or city graphics.
 
 [h2]Known Issues[/h2]
-This mod overwrites the corresponding species class added by "Silfae's city sets updated" so that it will not be available for use.  Instead, the original species class from Silfae (with localisation) is used.  Expect to see one line in error.log like this:
+This mod overwrites the corresponding species class added by "Silfae's city sets updated" so that it will not be available for use. Expect to see one line in error.log like this:
 [code]
-[23:01:47][game_singleobjectdatabase.h:165]: Object with key: Silfae-Silicoid already exists, using the one at  file: common/species_classes/zz_silfae_cities_silicoid_exclude.txt line: 2
+[23:01:47][game_singleobjectdatabase.h:165]: Object with key: Silfae-Silicoid already exists, using the one at file: common/species_classes/zz_silfae_cities_silicoid_exclude.txt line: 2
 [/code]
 [h2]Changelog[/h2]
 See [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2579736379]Change Notes[/url]
@@ -70,7 +70,7 @@ See [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2579736379
 Hosted on [url=https://github.com/corsairmarks/silicoid_portraits_revisited]GitHub[/url].
 
 [h1]Special Thanks[/h1]
-I was inspired to extend the original mod when I saw [url=https://steamcommunity.com/profiles/76561198037630876/myworkshopfiles/]Endugu[/url]'s [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1584824947]expansion[/url] of [url=https://steamcommunity.com/profiles/76561198021525667/myworkshopfiles/]Silfae[/url]'s [url=https://steamcommunity.com/workshop/filedetails/?id=881118424]Animated Xirmian Portraits[/url].  Modular mods that require downloading the original mod(s) help give credit where credit is due.
+I was inspired to extend the original mod when I saw [url=https://steamcommunity.com/profiles/76561198037630876/myworkshopfiles/]Endugu[/url]'s [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1584824947]expansion[/url] of [url=https://steamcommunity.com/profiles/76561198021525667/myworkshopfiles/]Silfae[/url]'s [url=https://steamcommunity.com/workshop/filedetails/?id=881118424]Animated Xirmian Portraits[/url]. Modular mods that require downloading the original mod(s) help give credit where credit is due.
 
 An extra special thanks to Silfae for creating and sharing so many detailed, animated portraits for the community.
 

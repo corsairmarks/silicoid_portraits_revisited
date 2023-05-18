@@ -6,7 +6,7 @@ There are lots of other mods which contain these portraits, so why should you ch
 
 # Changes
 
-All gameplay features from the original mod are upgraded to be fully compatible with Stellaris 3.7 "Canis Minor," the latest version when this was written.  Updates include:
+All gameplay features from the original mod are upgraded to be fully compatible with Stellaris 3.8 "Gemini," the latest version when this was written.  Updates include:
 
 * Update the included Contingency-swap shipset `silicoid_01`
     * Ensure the ship entities are blank for ship sections and instead use the ship hull as the attachment point for the Contingency graphics
@@ -33,16 +33,16 @@ All gameplay features from the original mod are upgraded to be fully compatible 
 * Update prescripted empires
     * Tacloriotans now also have Sparkly - they had an unused trait pick
     * Taclariotans now use the new `SLCOD1` namelist instead of `ART1`
-* Add a second Alt. Silicoid species class (`SLCODALT` which cannot randomly spawn) that contains the same portraits, but uses the default lithoid features without any of the above changes
-* Silicoid portraits with sexual dimorphism support mono-gendered species (as of Stellaris 3.2)
+* Also include the Silicoid portraits in the built-in Lithoid species class for use without the above gameplay changes, although they cannot randomly spawn (since Stellaris 3.8)
+* Silicoid portraits with sexual dimorphism support mono-gendered species (since Stellaris 3.2)
 
 ## Compatibility
 
-This mod is also incompatible with mods that add the same species classes, traits, shipset (by name - other reuses of the Contingency will be compatible), or art assets (portraits and meshes).
+This mod is also incompatible with mods that add the same species class, traits, shipset (by name - other reuses of the Contingency will be compatible), or art assets (portraits and meshes).
 
 The Launcher will tell you that some mods are outdated - that is because the dependencies are both out of date with the game's version number.  This mod overwrites and replaces all incompatible code so that the portrait mod will function as originally designed.  You can safely ignore the out-of-date warning for the dependency mods.
 
-Built for Stellaris version 3.7 "Canis Minor."  Not compatible with achievements.  The shipset does not have NSC classes.
+Built for Stellaris version 3.8 "Gemini."  Not compatible with achievements.  The shipset does not have NSC classes.
 
 ### Dependencies
 
@@ -57,7 +57,7 @@ This mod should be added before the game has started.  If you remove it from a g
 
 ## Known Issues
 
-This mod overwrites the corresponding species class added by "Silfae's city sets updated" so that it will not be available for use.  Instead, the original species class from Silfae (with localisation) is used.  Expect to see one line in error.log like this:
+This mod overwrites the corresponding species class added by "Silfae's city sets updated" so that it will not be available for use.  Expect to see one line in error.log like this:
 
 ```
 [23:01:47][game_singleobjectdatabase.h:165]: Object with key: Silfae-Silicoid already exists, using the one at  file: common/species_classes/zz_silfae_cities_silicoid_exclude.txt line: 2
@@ -106,6 +106,9 @@ This mod overwrites the corresponding species class added by "Silfae's city sets
     * Improve compatibility with Planetary Diversity - Molten/Cold Pulse traits don't offer full support, however
     * Remove global flag
     * Add compatibility trigger `has_silicoid_portraits_revisited_active`
+* 8.0.0 Update for Stellaris version 3.8 "Gemini"
+    * Silicoids (alternate) are now part of the Lithoid species class (thanks to changes by Paradox, this is no longer mod-unfriendly)
+    * Update prescripted empires to use the new prescripted ruler class and trait system
 
 ## Source Code
 
