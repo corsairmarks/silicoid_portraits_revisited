@@ -49,7 +49,8 @@ silicoid_empire1 = {
 		texture = 5
 		attachment = 0
 		clothes = 0
-		leader_class = ruler
+		leader_class = scientist
+		trait = leader_trait_spark_of_genius
 	}
 	spawn_as_fallen = no
 	room = "personality_federation_builders_room"
@@ -114,7 +115,8 @@ silicoid_empire2 = {
 		texture = 1
 		attachment = 0
 		clothes = 0
-		leader_class = ruler
+		leader_class = governor
+		trait = leader_trait_principled
 	}
 	spawn_as_fallen = no
 	ignore_portrait_duplication = no
