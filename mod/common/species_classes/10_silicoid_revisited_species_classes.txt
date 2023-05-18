@@ -1,0 +1,34 @@
+# file renamed so that portraits appear after all built-in portraits
+
+# species classes are additive as of Stellaris 3.8 "Gemini"
+LITHOID = {
+	custom_portraits = {
+		playable = { always = yes }
+		randomized = { always = no }
+		portraits = {
+			"silicoid_01"
+			"silicoid_b_01"
+			"silicoid_02"
+			"silicoid_03"
+			"silicoid_04"
+		}
+	}
+}
+
+SLCOD = {
+	archetype = LITHOID
+	playable = { has_lithoids = yes }
+	possible = { authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
+	randomized = { has_lithoids = yes }
+	gender = yes
+	portraits = {
+		"silicoid_01"
+		"silicoid_b_01"
+		"silicoid_02"
+		"silicoid_03"
+		"silicoid_04"
+	}
+	graphical_culture = silicoid_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+	trait = trait_silicoid
+}
